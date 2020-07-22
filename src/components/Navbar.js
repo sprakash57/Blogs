@@ -25,33 +25,32 @@ const Menu = (props) => {
   return (
     
       <Navbar
-        color="light"
         light
         expand="md"
-        // style={{position:"fixed",top:"0"}}
+        className="background-blue"
       >
         <div className="container">
-        <NavbarBrand href="/">KJSCE CODECELL</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse
-          isOpen={isOpen}
-          navbar
-          style={{
-            justifyContent:"space-between"
-          }}
-        >
-          <Nav className="ml-auto" navbar>
-            <NavItem>
-              <NavLink to="/" className="links">Home</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink to="/about"className="links">About</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink to="/blog"className="links">All Blogs</NavLink>
-            </NavItem>
-          </Nav>
-        </Collapse>
+          <NavbarBrand href="/" style={{fontWeight: "bold"}}>KJSCE Codecell</NavbarBrand>
+          <NavbarToggler onClick={toggle} />
+          <Collapse
+            isOpen={isOpen}
+            navbar
+            style={{
+              justifyContent:"space-between"
+            }}
+          >
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <NavLink to="/" className="links">Home</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink to="/about"className="links">About</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink to="/blog"className="links">All Blogs</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
         </div>
       </Navbar>
     
