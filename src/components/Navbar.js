@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   Collapse,
   Navbar,
@@ -11,50 +11,49 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  NavbarText
-} from 'reactstrap';
+  NavbarText,
+} from "reactstrap";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../sass/navbar.sass";
 
 const Menu = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
-
+  // WAIT WAIT. LEMME TRY ADDING THE ml-auto class again
   return (
     <div>
-      <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">reactstrap</NavbarBrand>
+      <Navbar
+        color="light"
+        light
+        expand="md"
+        // style={{position:"fixed",top:"0"}}
+      >
+        <NavbarBrand href="/">KJSCE CODECELL</NavbarBrand>
         <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
+        <Collapse
+          isOpen={isOpen}
+          navbar
+          style={{
+            justifyContent:"space-between"
+          }}
+        >
+          <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <NavLink href="/" className="links">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+              <NavLink href="/about"className="links">About</NavLink>
             </NavItem>
-            <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
-                Options
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>
-                  Option 1
-                </DropdownItem>
-                <DropdownItem>
-                  Option 2
-                </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>
-                  Reset
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
+            <NavItem>
+              <NavLink href="/blog"className="links">All Blogs</NavLink>
+            </NavItem>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
         </Collapse>
       </Navbar>
     </div>
   );
-}
+};
 
 export default Menu;

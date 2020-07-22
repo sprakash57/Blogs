@@ -2,9 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 
+import { Container } from 'reactstrap'
+
 import Layout from "../components/Layout";
-// import Features from '../components/Features'
-// import BlogRoll from '../components/BlogRoll'
+
+import MyCard from '../components/_Cards'
 
 export const IndexPageTemplate = (
   {
@@ -28,6 +30,9 @@ export const IndexPageTemplate = (
         <h2>Tagline</h2>
       </div>
     </section>
+    <Container>
+        <MyCard />
+    </Container>
   </div>
 );
 
