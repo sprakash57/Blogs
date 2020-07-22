@@ -23,13 +23,14 @@ const Menu = (props) => {
   const toggle = () => setIsOpen(!isOpen);
   // WAIT WAIT. LEMME TRY ADDING THE ml-auto class again
   return (
-    <div>
+    
       <Navbar
         color="light"
         light
         expand="md"
         // style={{position:"fixed",top:"0"}}
       >
+        <div className="container">
         <NavbarBrand href="/">KJSCE CODECELL</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse
@@ -41,18 +42,19 @@ const Menu = (props) => {
         >
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink href="/" className="links">Home</NavLink>
+              <NavLink to="/" className="links">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/about"className="links">About</NavLink>
+              <NavLink to="/about"className="links">About</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/blog"className="links">All Blogs</NavLink>
+              <NavLink to="/blog"className="links">All Blogs</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
+        </div>
       </Navbar>
-    </div>
+    
   );
 };
 
