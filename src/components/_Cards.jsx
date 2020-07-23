@@ -1,18 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Holder from "holderjs";
 
 import "../sass/variables.sass";
 
-import { Card, CardBody, CardTitle, CardText, CardImg, Row, Col } from "reactstrap";
+import {
+  Card,
+  CardBody,
+  CardTitle,
+  CardText,
+  CardImg,
+  Row,
+  Col,
+} from "reactstrap";
 
 export default function Cards() {
+  
+  useEffect(() => {
+    Holder.run({
+      images: ".testimg"
+    })
+  }, [])
+
   return (
     <Card>
       <Row>
         <Col sm md="4">
           <CardImg
             width="100%"
-            src="/assets/318x180.svg"
+            // src="holder.js/300x200"
             alt="Card image cap"
+            className="testimg"
           />
         </Col>
         <Col sm md="8">

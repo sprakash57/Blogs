@@ -25,12 +25,11 @@ const Menu = (props) => {
   return (
     <div>
       <Navbar
-        color="light"
         light
         expand="md"
-        // style={{position:"fixed",top:"0"}}
+        className="background-blue"
       >
-        <NavbarBrand href="/">KJSCE CODECELL</NavbarBrand>
+        <NavbarBrand href="/" style={{fontWeight: "bold"}}>KJSCE Codecell</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse
           isOpen={isOpen}
