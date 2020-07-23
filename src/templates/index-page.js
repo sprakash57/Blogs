@@ -7,7 +7,7 @@ import { Container } from "reactstrap";
 import Layout from "../components/Layout";
 import Jumbotron from "../components/Jumbotron";
 
-import MyCard from "../components/_Cards";
+import MyCard from "../components/Cards";
 
 export const IndexPageTemplate = () => (
   // {
