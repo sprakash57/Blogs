@@ -22,12 +22,25 @@ export const IndexPageTemplate = (
   <div>
     <section className="section-home">
       <div className="box">
+        <div className="d-none d-md-block">
         <h1>
           <span style={{ fontSize: "1.2em" }}>KJSCE</span>
           <br /> 
           <span style={{ fontSize: "3em" }}>Codecell</span>
         </h1>
         <h2>Tagline</h2>
+        </div>
+        <div className="d-block d-md-none">
+          <div className="row row-header align-items-center">
+            <div className="col-12" >
+            <h1 align="center">KJSCE Codecell
+            </h1>
+            <p></p><h4 align="center">Changing the World</h4>
+            <p></p>
+            <h4 align="center"> One bit at a time.</h4>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <Container>
