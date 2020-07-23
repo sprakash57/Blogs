@@ -1,50 +1,28 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { graphql } from "gatsby";
+// import { graphql } from "gatsby";
 
-import { Container } from 'reactstrap'
+import { Container } from "reactstrap";
 
 import Layout from "../components/Layout";
+import Jumbotron from "../components/Jumbotron";
 
-import MyCard from '../components/_Cards'
+import MyCard from "../components/_Cards";
 
-export const IndexPageTemplate = (
-  {
-    //   image,
-    //   title,
-    //   heading,
-    //   subheading,
-    //   mainpitch,
-    //   description,
-    //   intro,
-  }
-) => (
+export const IndexPageTemplate = () => (
+  // {
+  //   image,
+  //   title,
+  //   heading,
+  //   subheading,
+  //   mainpitch,
+  //   description,
+  //   intro,
+  // }
   <div>
-    <section className="section-home">
-      <div className="box">
-        <div className="d-none d-md-block">
-        <h1>
-          <span style={{ fontSize: "1.2em" }}>KJSCE</span>
-          <br /> 
-          <span style={{ fontSize: "3em" }}>Codecell</span>
-        </h1>
-        <h2>Tagline</h2>
-        </div>
-        <div className="d-block d-md-none">
-          <div className="row row-header align-items-center">
-            <div className="col-12" >
-            <h1 align="center">KJSCE Codecell
-            </h1>
-            <p></p><h4 align="center">Changing the World</h4>
-            <p></p>
-            <h4 align="center"> One bit at a time.</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <Jumbotron />
     <Container>
-        <MyCard />
+      <MyCard />
     </Container>
   </div>
 );
@@ -61,8 +39,8 @@ IndexPageTemplate.propTypes = {
   }),
 };
 
-const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark;
+const IndexPage = () => {
+  // const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
@@ -89,21 +67,21 @@ IndexPage.propTypes = {
 
 export default IndexPage;
 
-export const pageQuery = graphql`
-  query IndexPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-      frontmatter {
-        title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        heading
-        subheading
-      }
-    }
-  }
-`;
+// export const pageQuery = graphql`
+//   query IndexPageTemplate {
+//     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+//       frontmatter {
+//         title
+//         image {
+//           childImageSharp {
+//             fluid(maxWidth: 2048, quality: 100) {
+//               ...GatsbyImageSharpFluid
+//             }
+//           }
+//         }
+//         heading
+//         subheading
+//       }
+//     }
+//   }
+// `;

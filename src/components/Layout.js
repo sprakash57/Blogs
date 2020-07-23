@@ -8,15 +8,16 @@ import { withPrefix } from "gatsby";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../sass/sections.sass";
 
-import Holder from 'holderjs'
+import Holder from "holderjs";
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
 
+  // eslint-disable-next-line
   function holder() {
     Holder.run({
-      images: ".testimg"
-    })
+      images: ".testimg",
+    });
   }
 
   return (
