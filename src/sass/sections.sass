@@ -53,13 +53,6 @@
     align-items: center
     font-size: 0.8rem
 
-@media (max-width: $breakpoint-large)
-    .topPostCard,.topPostImg
-        height: 150px !important
-        line-height: 1
-    .topPostText
-        font-size: 0.7rem
-        padding: 0 !important
 
 .headerPost
     display: block
@@ -84,3 +77,15 @@
     height: 175px !important
     border: none !important
     box-shadow: 3px 3px 10px #333 !important
+
+.card-body
+    padding: 0
+
+    
+@media (max-width: $breakpoint-large)
+    .topPostCard,.topPostImg,.recentPostCard
+        height: 150px !important
+        line-height: 1
+    .topPostText
+        font-size: 0.7rem
+        

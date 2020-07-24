@@ -28,7 +28,7 @@ const RecentPosts = () => {
                   width="100%"
                   src="https://images.unsplash.com/photo-1428223501723-d821c5d00ca3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
                   alt="Card image cap"
-                  className=" topPostImg"
+                  className="topPostImg"
                 />
               </Col>
               <Col sm md="7" className="topPostText">
