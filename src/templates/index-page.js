@@ -8,6 +8,7 @@ import Layout from "../components/Layout";
 import Jumbotron from "../components/Jumbotron";
 
 import MyCard from "../components/Cards";
+import TopPosts from "../components/TopPosts";
 
 export const IndexPageTemplate = () => (
   // {
@@ -23,6 +24,7 @@ export const IndexPageTemplate = () => (
     <Jumbotron />
     <Container>
       <MyCard />
+      <TopPosts />
     </Container>
   </div>
 );

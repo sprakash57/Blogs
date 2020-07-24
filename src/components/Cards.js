@@ -22,7 +22,7 @@ export default function Cards() {
   }, []);
 
   return (
-    <div>
+    <div className="d-none d-sm-block">
       {/* Main Card 1 */}
       <Card>
         <Row>
@@ -36,7 +36,9 @@ export default function Cards() {
           </Col>
           <Col sm md="5" className="text">
             <CardBody>
-              <CardTitle>Card Title</CardTitle>
+              <CardTitle>
+                <span className="title">Card Title</span>
+              </CardTitle>
               <CardText>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Fugiat, asperiores cumque, consectetur impedit veritatis
@@ -54,11 +56,13 @@ export default function Cards() {
       {/* Main Card 2 */}
 
       <Card>
+        <span className="ribbon">Feautured</span>
         <Row>
-          <Col sm md="5" className="text">
-            <span className="ribbon">Feautured</span>
+          <Col sm md="5" className="text fix">
             <CardBody>
-              <CardTitle>Card Title</CardTitle>
+              <CardTitle>
+                <span className="title">Card Title</span>
+              </CardTitle>
               <CardText>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Fugiat, asperiores cumque, consectetur impedit veritatis
@@ -75,7 +79,7 @@ export default function Cards() {
               width="100%"
               src="https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
               alt="Card image cap"
-              className="testimg cardImg2"
+              className="testimg cardImg corner"
             />
           </Col>
         </Row>

@@ -1,4 +1,7 @@
 @import "./variables"
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+// --------------Home Section---------------
 
 .section-home
     height: 70vh
@@ -18,4 +21,38 @@
     .section-home
         height: 65vh
 
-        
+// -------------Top Posts Section--------------
+.header
+    display: block
+    text-align: center
+    font-size: 2.5rem        
+    font-family: 'Open Sans', sans-serif
+    font-weight: 600
+    letter-spacing: -1px
+    position: relative
+    margin-bottom: 25px
+
+    &:before
+        content: ""
+        position: absolute
+        bottom: -5px
+        left: 44%
+        width: 140px
+        height: 3px
+        margin: auto
+        background-color: $green
+.topPostCard
+    margin: 10px 15px
+    height: 150px
+    border: none
+    box-shadow: 3px 5px 10px #888
+.topPostImg
+    height: 150px
+    border-top-left-radius: 10px
+    border-bottom-left-radius: 10px
+.topPostText
+    height: 150px
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 0.8rem
