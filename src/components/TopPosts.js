@@ -17,11 +17,12 @@ const TopPosts = () => {
   return (
     <div className="d-none d-md-block">
       <div className="header">Top Posts</div>
+      <div className="underline"></div>
       <Row>
         <Col md lg="6" className="p-0">
           <Card className="topPostCard">
             <Row>
-              <Col sm md="4" className="p-0">
+              <Col sm md="5" className="p-0">
                 <CardImg
                   width="100%"
                   src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
@@ -29,7 +30,7 @@ const TopPosts = () => {
                   className=" topPostImg"
                 />
               </Col>
-              <Col sm md="8" className="topPostText">
+              <Col sm md="7" className="topPostText">
                 <CardBody>
                   <CardTitle>Card Title</CardTitle>
                   <CardText>
@@ -47,7 +48,7 @@ const TopPosts = () => {
         <Col md lg="6" className="p-0">
           <Card className="topPostCard">
             <Row>
-              <Col sm md="4" className="p-0">
+              <Col sm md="5" className="p-0">
                 <CardImg
                   width="100%"
                   src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
@@ -55,7 +56,7 @@ const TopPosts = () => {
                   className=" topPostImg"
                 />
               </Col>
-              <Col sm md="8" className="topPostText">
+              <Col sm md="7" className="topPostText">
                 <CardBody>
                   <CardTitle>Card Title</CardTitle>
                   <CardText>
@@ -75,7 +76,7 @@ const TopPosts = () => {
         <Col md lg="6" className="p-0">
           <Card className="topPostCard">
             <Row>
-              <Col sm md="4" className="p-0">
+              <Col sm md="5" className="p-0">
                 <CardImg
                   width="100%"
                   src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
@@ -83,7 +84,7 @@ const TopPosts = () => {
                   className=" topPostImg"
                 />
               </Col>
-              <Col sm md="8" className="topPostText">
+              <Col sm md="7" className="topPostText">
                 <CardBody>
                   <CardTitle>Card Title</CardTitle>
                   <CardText>
@@ -101,7 +102,7 @@ const TopPosts = () => {
         <Col md lg="6" className="p-0">
           <Card className="topPostCard">
             <Row>
-              <Col sm md="4" className="p-0">
+              <Col sm md="5" className="p-0">
                 <CardImg
                   width="100%"
                   src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
@@ -109,7 +110,7 @@ const TopPosts = () => {
                   className=" topPostImg"
                 />
               </Col>
-              <Col sm md="8" className="topPostText">
+              <Col sm md="7" className="topPostText">
                 <CardBody>
                   <CardTitle>Card Title</CardTitle>
                   <CardText>
@@ -129,7 +130,7 @@ const TopPosts = () => {
         <Col md lg="6" className="p-0">
           <Card className="topPostCard">
             <Row>
-              <Col sm md="4" className="p-0">
+              <Col sm md="5" className="p-0">
                 <CardImg
                   width="100%"
                   src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
@@ -137,7 +138,7 @@ const TopPosts = () => {
                   className=" topPostImg"
                 />
               </Col>
-              <Col sm md="8" className="topPostText">
+              <Col sm md="7" className="topPostText">
                 <CardBody>
                   <CardTitle>Card Title</CardTitle>
                   <CardText>
@@ -155,7 +156,7 @@ const TopPosts = () => {
         <Col md lg="6" className="p-0">
           <Card className="topPostCard">
             <Row>
-              <Col sm md="4" className="p-0">
+              <Col sm md="5" className="p-0">
                 <CardImg
                   width="100%"
                   src="https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
@@ -163,7 +164,7 @@ const TopPosts = () => {
                   className=" topPostImg"
                 />
               </Col>
-              <Col sm md="8" className="topPostText">
+              <Col sm md="7" className="topPostText">
                 <CardBody>
                   <CardTitle>Card Title</CardTitle>
                   <CardText>

@@ -30,29 +30,33 @@
     font-weight: 600
     letter-spacing: -1px
     position: relative
-    margin-bottom: 25px
 
-    &:before
-        content: ""
-        position: absolute
-        bottom: -5px
-        left: 44%
-        width: 140px
-        height: 3px
-        margin: auto
-        background-color: $green
+.underline
+    margin: 10px auto 20px auto
+    width: 140px
+    height: 3px
+    background-color: $green
+
 .topPostCard
-    margin: 10px 15px
-    height: 150px
-    border: none
-    box-shadow: 3px 5px 10px #888
+    margin: 10px 15px !important
+    height: 175px !important
+    border: none !important
+    box-shadow: 3px 5px 10px #888 !important
 .topPostImg
-    height: 150px
+    height: 175px
     border-top-left-radius: 10px
     border-bottom-left-radius: 10px
 .topPostText
-    height: 150px
+    height: 175px
     display: flex
     justify-content: center
     align-items: center
     font-size: 0.8rem
+
+@media (max-width: $breakpoint-large)
+    .topPostCard,.topPostImg
+        height: 150px !important
+        line-height: 1
+    .topPostText
+        font-size: 0.7rem
+
