@@ -11,6 +11,7 @@ import MyCard from "../components/Cards";
 import TopPosts from "../components/TopPosts";
 import Categories from "../components/Categories";
 import RecentPosts from "../components/RecentPosts";
+import About from "../components/About";
 
 export const IndexPageTemplate = () => (
   // {
@@ -29,6 +30,7 @@ export const IndexPageTemplate = () => (
       <TopPosts />
       <Categories />
       <RecentPosts />
+      <About />
     </Container>
   </div>
 );
