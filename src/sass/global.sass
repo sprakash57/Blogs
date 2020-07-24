@@ -5,13 +5,30 @@
     margin: 0
     padding: 0
     box-sizing: border-box
+    scroll-behaviour: smooth
 
 body
     font-family: 'Open Sans', sans-serif
     background-color: #f0f0f0
+    overflow-x: hidden !important
 
 .background-blue
     background-color: $blue !important
 
 .white
     color: white !important
+
+.cover
+    position: relative
+    
+.bg-texture
+    z-index: -2 !important
+    height: 280vh
+    width: 120vh
+    top: -80vh
+    left: 50vh
+    background: linear-gradient(to right, #34e89e, #343e1e)
+    transform: rotate(90deg)
+    position: absolute
+    margin: 0 !important
+    

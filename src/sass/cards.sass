@@ -57,17 +57,6 @@ body
 
 .title
     font-size: 1.5rem
-
-@media (max-width: $breakpoint-large)
-    .card,.cardImg,.text   
-        height: 300px
-        font-size: 0.8rem
-    .text
-        padding: 30px 0px 0px 0px
-    .fix
-        padding: 40px 0px 0px 0px
-    .ribbon
-        top: 10px
  
 
 /*---------------------Category Cards-------------------- */
@@ -87,6 +76,7 @@ body
     height: 200px
     align-items: center
     justify-content: center
+    margin-bottom: 40px
 
 .category
     z-index: 0
@@ -102,7 +92,7 @@ body
 
 .overlay
     position: absolute
-    width: 85px
+    width: 90px
     text-align: center
     background-color: white
     color: black
@@ -113,3 +103,21 @@ body
     font-size: 1.25rem
     font-weight: 600
 
+    
+@media (max-width: $breakpoint-large)
+    .card,.cardImg,.text   
+        height: 300px
+        font-size: 0.8rem
+    .text
+        padding: 30px 0px 0px 0px
+    .fix
+        padding: 40px 0px 0px 0px
+    .ribbon
+        top: 10px
+    .categoryImg
+        width: 150px
+        height: 150px
+        border-radius: 50px
+    .overlay
+        width: 70px
+        font-size: 1rem
