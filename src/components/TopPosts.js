@@ -180,6 +180,7 @@ const TopPosts = () => {
           </Card>
         </Col>
       </Row>
+      <hr />
     </div>
   );
 };
