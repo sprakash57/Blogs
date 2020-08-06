@@ -17,13 +17,13 @@ const Jumbotron = () => {
                 Codecell
               </span>
             </h1>
-            <h2
+            <h3
               align="center"
               className="white"
-              style={{ textShadow: "3px 2px #777" }}
+              style={{ textShadow: "3px 2px #777", marginTop: "1em" }}
             >
-              Life runs on Code
-            </h2>
+              Changing the world, one bit at a time
+            </h3>
           </div>
           <div className="d-block d-md-none">
             <div className="row row-header align-items-center">
