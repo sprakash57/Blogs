@@ -16,7 +16,6 @@ import {
 const RecentPosts = () => {
   return (
     <div className="d-none d-md-block cover">
-      <div className="bg-texture"></div>
       <div className="headerPost">Recent Posts</div>
       <div className="underline2"></div>
       <Row>
@@ -181,7 +180,6 @@ const RecentPosts = () => {
           </Card>
         </Col>
       </Row>
-      <hr />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Link } from "gatsby";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -8,7 +8,7 @@ import { CardImg } from "reactstrap";
 
 const Categories = () => {
   return (
-    <Fragment>
+    <div className="d-none d-md-block">
       <div className="categoryHeader">Categories</div>
       <div className="underline"></div>
       <div className="categories">
@@ -68,7 +68,7 @@ const Categories = () => {
           </Link>
         </div>
       </div>
-    </Fragment>
+    </div>
   );
 };
 

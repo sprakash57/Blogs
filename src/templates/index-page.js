@@ -2,8 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 // import { graphql } from "gatsby";
 
-import { Container } from "reactstrap";
-
 import Layout from "../components/Layout";
 import Jumbotron from "../components/Jumbotron";
 
@@ -11,6 +9,7 @@ import MyCard from "../components/Cards";
 import TopPosts from "../components/TopPosts";
 import Categories from "../components/Categories";
 import RecentPosts from "../components/RecentPosts";
+
 import About from "../components/About";
 
 export const IndexPageTemplate = () => (
@@ -25,13 +24,12 @@ export const IndexPageTemplate = () => (
   // }
   <div>
     <Jumbotron />
-    <Container>
-      <MyCard />
-      <TopPosts />
-      <Categories />
-      <RecentPosts />
-      <About />
-    </Container>
+
+    <MyCard />
+    <TopPosts />
+    <Categories />
+    <RecentPosts />
+    <About />
   </div>
 );
 

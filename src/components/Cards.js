@@ -22,7 +22,7 @@ export default function Cards() {
   }, []);
 
   return (
-    <div className="d-none d-sm-block">
+    <div className="d-none d-sm-block cleanse">
       {/* Main Card 1 */}
       <Card>
         <Row>
