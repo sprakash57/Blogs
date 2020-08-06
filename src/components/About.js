@@ -36,7 +36,7 @@ const About = () => {
               </div>
             </Col>
           </Row>
-          <div className="m-auto">Created by KJSCE Codecell</div>
+          <span>Created by KJSCE Codecell</span>
         </div>
       </div>
     </div>

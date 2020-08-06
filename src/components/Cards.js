@@ -56,7 +56,7 @@ export default function Cards() {
       {/* Main Card 2 */}
 
       <Card>
-        <span className="ribbon">Feautured</span>
+        <span className="ribbon">Featured</span>
         <Row>
           <Col sm md="5" className="text fix">
             <CardBody>

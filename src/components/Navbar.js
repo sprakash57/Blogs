@@ -16,7 +16,6 @@ const Menu = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
-  // WAIT WAIT. LEMME TRY ADDING THE ml-auto class again
   return (
     <Navbar light expand="md" className="background-blue sticky-top">
       <div className="container pr-3">
