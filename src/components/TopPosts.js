@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "gatsby";
-import "bootstrap/dist/css/bootstrap.min.css";
 
+import { Link } from "gatsby";
+
+import "bootstrap/dist/css/bootstrap.min.css";
 import "../sass/sections.sass";
 
 import {
@@ -186,7 +187,7 @@ const TopPosts = () => {
                     Quas amet, facere quibusdam illo sit itaque.
                   </CardText>
                   <CardText>
-                    <blockquote className="text-success">- John Doe</blockquote>
+                    <p className="text-success">- John Doe</p>
                   </CardText>
                 </CardBody>
               </Col>

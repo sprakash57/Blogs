@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-// import { graphql } from "gatsby";
+import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
 import Jumbotron from "../components/Jumbotron";
@@ -12,7 +12,7 @@ import RecentPosts from "../components/RecentPosts";
 
 import About from "../components/About";
 
-export const IndexPageTemplate = () => (
+export const IndexPageTemplate = ({ data }) => (
   // {
   //   image,
   //   title,
@@ -23,6 +23,12 @@ export const IndexPageTemplate = () => (
   //   intro,
   // }
   <div>
+    {data.allMarkdownRemark.edges.filter(e => e.node.frontmatter.templateKey === 'blog-post').map((element) => (
+      <>
+        <h2>{element.node.frontmatter.title}</h2>
+        <h5>{element.node.frontmatter.templateKey}</h5>
+      </>
+    ))}
     <Jumbotron />
 
     <MyCard />
@@ -45,19 +51,30 @@ IndexPageTemplate.propTypes = {
   }),
 };
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
   // const { frontmatter } = data.markdownRemark;
+
+  // const data = useStaticQuery(graphql`
+  //   query{
+  //     site{
+  //       siteMetadata{
+  //         title
+  //       }
+  //     }
+  //   }
+  // `)
 
   return (
     <Layout>
       <IndexPageTemplate
-      // image={frontmatter.image}
-      // title={frontmatter.title}
-      // heading={frontmatter.heading}
-      // subheading={frontmatter.subheading}
-      // mainpitch={frontmatter.mainpitch}
-      // description={frontmatter.description}
-      // intro={frontmatter.intro}
+        data={data}
+        // image={frontmatter.image}
+        // title={frontmatter.title}
+        // heading={frontmatter.heading}
+        // subheading={frontmatter.subheading}
+        // mainpitch={frontmatter.mainpitch}
+        // description={frontmatter.description}
+        // intro={frontmatter.intro}
       />
     </Layout>
   );
@@ -73,21 +90,20 @@ IndexPage.propTypes = {
 
 export default IndexPage;
 
-// export const pageQuery = graphql`
-//   query IndexPageTemplate {
-//     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-//       frontmatter {
-//         title
-//         image {
-//           childImageSharp {
-//             fluid(maxWidth: 2048, quality: 100) {
-//               ...GatsbyImageSharpFluid
-//             }
-//           }
-//         }
-//         heading
-//         subheading
-//       }
-//     }
-//   }
-// `;
+export const indexPageQuery = graphql`
+  query {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            templateKey
+          }
+        }
+      }
+    }
+  }
+`;

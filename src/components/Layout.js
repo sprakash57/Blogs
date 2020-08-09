@@ -8,17 +8,9 @@ import { withPrefix } from "gatsby";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../sass/sections.sass";
 
-import Holder from "holderjs";
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
-
-  // eslint-disable-next-line
-  function holder() {
-    Holder.run({
-      images: ".testimg",
-    });
-  }
 
   return (
     <div>
@@ -59,7 +51,6 @@ const TemplateWrapper = ({ children }) => {
           property="og:image"
           content={`${withPrefix("/")}img/og-image.jpg`}
         />
-        <script src="holder.js"></script>
       </Helmet>
       <Navbar />
       <div>{children}</div>
