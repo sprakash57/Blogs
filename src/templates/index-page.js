@@ -13,26 +13,20 @@ import RecentPosts from "../components/RecentPosts";
 import About from "../components/About";
 
 export const IndexPageTemplate = ({ data }) => (
-  // {
-  //   image,
-  //   title,
-  //   heading,
-  //   subheading,
-  //   mainpitch,
-  //   description,
-  //   intro,
-  // }
   <div>
-    {data.allMarkdownRemark.edges.filter(e => e.node.frontmatter.templateKey === 'blog-post').map((element) => (
-      <>
-        <h2>{element.node.frontmatter.title}</h2>
-        <h5>{element.node.frontmatter.templateKey}</h5>
-      </>
-    ))}
+    {/* {data.edges
+      .filter((e) => e.node.frontmatter.templateKey === "blog-post")
+      .map((element) => (
+        <>
+          <h2>{element.node.frontmatter.title}</h2>
+          <p>{element.node.frontmatter.description}</p>
+          <h5>{element.node.frontmatter.date}</h5>
+        </>
+      ))} */}
     <Jumbotron />
 
     <MyCard />
-    <TopPosts />
+    <TopPosts data={data} />
     <Categories />
     <RecentPosts />
     <About />
@@ -52,30 +46,9 @@ IndexPageTemplate.propTypes = {
 };
 
 const IndexPage = ({ data }) => {
-  // const { frontmatter } = data.markdownRemark;
-
-  // const data = useStaticQuery(graphql`
-  //   query{
-  //     site{
-  //       siteMetadata{
-  //         title
-  //       }
-  //     }
-  //   }
-  // `)
-
   return (
     <Layout>
-      <IndexPageTemplate
-        data={data}
-        // image={frontmatter.image}
-        // title={frontmatter.title}
-        // heading={frontmatter.heading}
-        // subheading={frontmatter.subheading}
-        // mainpitch={frontmatter.mainpitch}
-        // description={frontmatter.description}
-        // intro={frontmatter.intro}
-      />
+      <IndexPageTemplate data={data.allMarkdownRemark} />
     </Layout>
   );
 };
@@ -96,11 +69,15 @@ export const indexPageQuery = graphql`
       edges {
         node {
           id
-          excerpt(pruneLength: 250)
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            description
+            author
             templateKey
+            featuredimage{
+              relativePath
+            }
           }
         }
       }

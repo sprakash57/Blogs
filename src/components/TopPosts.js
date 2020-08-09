@@ -15,12 +15,49 @@ import {
   Col,
 } from "reactstrap";
 
-const TopPosts = () => {
+const TopPosts = ({ data }) => {
   return (
     <div className="d-none d-sm-block cleanse">
       <div className="header">Top Posts</div>
       <div className="underline"></div>
       <Row>
+        {data.edges
+          .filter((e) => e.node.frontmatter.templateKey === "blog-post")
+          .map((e) => (
+            <Col sm="12" md="6" lg="6" className="p-0">
+              <Card className="topPostCard">
+                <Row>
+                  <Col sm md="5" className="p-0">
+                    <Link to="#">
+                      <CardImg
+                        width="100%"
+                        src={
+                          e.node.frontmatter.featuredimage != null
+                            ? "/img/" +
+                              e.node.frontmatter.featuredimage.relativePath
+                            : "https://increasify.com.au/wp-content/uploads/2016/08/default-image.png"
+                        }
+                        alt="Card image cap"
+                        className=" topPostImg"
+                      />
+                    </Link>
+                  </Col>
+
+                  <Col sm md className="topPostText p-3">
+                    <CardBody>
+                      <CardTitle>{e.node.frontmatter.title}</CardTitle>
+                      <CardText>{e.node.frontmatter.description}</CardText>
+                      <CardText className="text-success">
+                        {e.node.frontmatter.author}
+                      </CardText>
+                    </CardBody>
+                  </Col>
+                </Row>
+              </Card>
+            </Col>
+          ))}
+      </Row>
+      {/* <Row>
         <Col sm="12" md="6" lg="6" className="p-0">
           <Card className="topPostCard">
             <Row>
@@ -194,7 +231,7 @@ const TopPosts = () => {
             </Row>
           </Card>
         </Col>
-      </Row>
+      </Row> */}
       <hr />
     </div>
   );
