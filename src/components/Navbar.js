@@ -6,9 +6,9 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
 } from "reactstrap";
 
+import { Link } from "gatsby";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../sass/navbar.sass";
 
@@ -31,20 +31,20 @@ const Menu = (props) => {
           }}
         >
           <Nav className="ml-auto" navbar>
-            <NavItem>
-              <NavLink to="/" className="links">
+            <NavItem className="mr-3">
+              <Link to="/" className="links">
                 Home
-              </NavLink>
+              </Link>
             </NavItem>
-            <NavItem>
-              <NavLink to="/about" className="links">
+            <NavItem className="mr-3">
+              <Link to="/about" className="links">
                 About
-              </NavLink>
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLink to="/blog" className="links">
+              <Link to="/blog" className="links">
                 All Blogs
-              </NavLink>
+              </Link>
             </NavItem>
           </Nav>
         </Collapse>

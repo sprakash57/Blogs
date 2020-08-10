@@ -46,7 +46,7 @@ const TopPosts = ({ data }) => {
                   <Col sm md className="topPostText p-3">
                     <CardBody>
                       <CardTitle>{e.node.frontmatter.title}</CardTitle>
-                      <CardText>{e.node.frontmatter.description}</CardText>
+                      <CardText>{e.node.frontmatter.description}...</CardText>
                       <CardText className="text-success">
                         {e.node.frontmatter.author}
                       </CardText>

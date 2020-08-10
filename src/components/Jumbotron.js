@@ -8,19 +8,19 @@ const Jumbotron = () => {
           <div className="d-none d-md-block">
             <h1 style={{ lineHeight: 0.9 }} className="white">
               <span
-                style={{ fontSize: "1.2em", textShadow: "4px 4px #777" }}
+                style={{ fontSize: "1.2em", textShadow: "3px 2px #777" }}
                 className="d-block m-0"
               >
                 KJSCE
               </span>
-              <span style={{ fontSize: "3em", textShadow: "6px 4px #777" }}>
+              <span style={{ fontSize: "3em", textShadow: "4px 3px #777" }}>
                 Codecell
               </span>
             </h1>
             <h3
               align="center"
               className="white"
-              style={{ textShadow: "3px 2px #777", marginTop: "1em" }}
+              style={{ textShadow: "1px 2px #777", marginTop: "1em" }}
             >
               Changing the world, one bit at a time
             </h3>
