@@ -37,13 +37,13 @@ const Menu = (props) => {
               </Link>
             </NavItem>
             <NavItem className="mr-3">
-              <Link to="/about" className="links">
-                About
+              <Link to="/blog" className="links">
+                All Articles
               </Link>
             </NavItem>
             <NavItem>
-              <Link to="/blog" className="links">
-                All Blogs
+              <Link to="/about" className="links">
+                About
               </Link>
             </NavItem>
           </Nav>
