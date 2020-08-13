@@ -12,7 +12,7 @@ class BlogRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark;
 
     return (
-      <div style={{ display: "flex" }}>
+      <div className="allPosts">
         {posts &&
           posts.map(({ node: post }) => (
             <div
@@ -40,7 +40,9 @@ class BlogRoll extends React.Component {
                     className="title text-primary is-size-4"
                     to={post.fields.slug}
                   >
-                    {post.frontmatter.title}
+                    <span style={{
+                      color: "#242424"
+                    }}>{post.frontmatter.title}</span>
                   </Link>
                   <span className="d-block pt-1">{post.frontmatter.date}</span>
                 </CardTitle>

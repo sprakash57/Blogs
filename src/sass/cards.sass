@@ -1,4 +1,15 @@
 @import "./variables"
+
+/* BlogRoll */
+.allPosts
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+
+@media only screen and (max-width: $breakpoint-tablet)
+    .allPosts
+        display: flex
+        flex-direction: column
+
 /* Basic Cards */
 body
     background-color: #eee
@@ -107,7 +118,7 @@ body
     padding: 20px 0 20px 20px
 
     
-@media (max-width: $breakpoint-large)
+@media only screen and (max-width: $breakpoint-large)
     .card,.cardImg,.text   
         height: 300px
         font-size: 0.8rem
