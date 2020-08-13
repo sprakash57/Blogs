@@ -30,7 +30,25 @@ body
         .scroll-card-img img
             object-fit: cover
         .scroll-card-content
-            padding: 1em
+            padding: 1em 1.2em
+
+@media only screen and (max-width: $breakpoint-tablet)
+    .scroll-cards
+        height: 100%
+        display: flex
+        flex-wrap: nowrap
+        overflow-x: auto
+        overflow-y: hidden
+        -webkit-overflow-scrolling: touch //For iOS. Works PERFECTLY! Smooth Scrolling with Momentum too!
+        &::-webkit-scrollbar 
+            display: none
+
+        .scroll-card
+            display: flex
+            flex-direction: column
+            flex: 0 0 auto
+            height: 100%
+            width: 60vw
 
 .card
     margin: 50px 0
