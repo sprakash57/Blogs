@@ -25,7 +25,7 @@ export const IndexPageTemplate = ({ data }) => (
       ))} */}
     <Jumbotron />
 
-    <MyCard />
+    <MyCard data={data} />
     <TopPosts data={data} />
     <Categories />
     <RecentPosts data={data} />
@@ -75,6 +75,7 @@ export const indexPageQuery = graphql`
             description
             author
             templateKey
+            featuredpost
             featuredimage{
               relativePath
             }

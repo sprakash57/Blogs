@@ -4,7 +4,7 @@ import { Link, graphql, StaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import { CardTitle, Row, Col } from "reactstrap";
+import { CardTitle } from "reactstrap";
 
 class BlogRoll extends React.Component {
   render() {
