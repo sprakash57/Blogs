@@ -8,9 +8,13 @@
 
 body
     font-family: 'Open Sans', sans-serif
-    font-size: 16px
+    font-size: 16px !important
     background-color: #f0f0f0
     overflow-x: hidden !important
+
+.hover-underline
+    &:hover
+        text-decoration: $green
 
 .cleanse
     padding: 0 8% 0 8%
@@ -22,12 +26,12 @@ body
     color: white !important
 
 .cover
-    position: relative
-    padding: 0 8% 0 8%
-    background-size: cover
-    width: 100vw
-    z-index: -3 !important
-    margin: 0 !important
+    // position: relative
+    // padding: 0 8% 0 8%
+    // background-size: cover
+    width: 100%
+    // z-index: -3 !important
+    // margin: 0 !important
     background: linear-gradient(to bottom, #34e89e,#52c2a4,#061700)
 
     
@@ -43,7 +47,7 @@ body
 
 @media (max-width: $breakpoint-tablet) 
     body
-        font-size: 12px
+        font-size: 12px !important
     .bg-texture-about
         padding-top: 15px
         padding-bottom: 60px

@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-starter-netlify-cms",
-  "description": "Example Gatsby, and Netlify CMS project",
+  "name": "codecell-blog",
+  "description": "KJSCE Codecell's marvellous tech blog",
   "version": "1.0.0",
   "author": "KJSCE Codecell",
   "dependencies": {

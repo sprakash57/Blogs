@@ -37,12 +37,17 @@ class BlogRoll extends React.Component {
                 ) : null}
                 <CardTitle style={{ padding: "15px", fontSize: "0.8rem" }}>
                   <Link
-                    className="title text-primary is-size-4"
+                    className="title is-size-4"
                     to={post.fields.slug}
                   >
-                    <span style={{
-                      color: "#242424"
-                    }}>{post.frontmatter.title}</span>
+                    <span
+                      style={{
+                        color: "#242424",
+                      }}
+                      className="hover-underline"
+                    >
+                      {post.frontmatter.title}
+                    </span>
                   </Link>
                   <span className="d-block pt-1">{post.frontmatter.date}</span>
                 </CardTitle>

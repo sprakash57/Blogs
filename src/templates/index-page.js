@@ -28,7 +28,7 @@ export const IndexPageTemplate = ({ data }) => (
     <MyCard />
     <TopPosts data={data} />
     <Categories />
-    <RecentPosts />
+    <RecentPosts data={data} />
     <About />
   </div>
 );
@@ -78,6 +78,9 @@ export const indexPageQuery = graphql`
             featuredimage{
               relativePath
             }
+          }
+          fields{
+            slug
           }
         }
       }
