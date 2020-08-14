@@ -9,6 +9,7 @@ import MyCard from "../components/Cards";
 import TopPosts from "../components/TopPosts";
 import Categories from "../components/Categories";
 import RecentPosts from "../components/RecentPosts";
+import SlickSlider from "../components/SlickSlider";
 
 import About from "../components/About";
 
@@ -27,7 +28,8 @@ export const IndexPageTemplate = ({ data }) => (
 
     <MyCard data={data} />
     <TopPosts data={data} />
-    <Categories />
+    {/* <Categories /> */}
+    <SlickSlider />
     <RecentPosts data={data} />
     <About />
   </div>
@@ -76,11 +78,11 @@ export const indexPageQuery = graphql`
             author
             templateKey
             featuredpost
-            featuredimage{
+            featuredimage {
               relativePath
             }
           }
-          fields{
+          fields {
             slug
           }
         }

@@ -21,7 +21,7 @@ export default function Cards({ data }) {
       {data.edges
         .filter((e) => e.node.frontmatter.featuredpost === true)
         .map((e) => (
-          <Card>
+          <Card className="d-none d-sm-block">
             <span className="ribbon">Featured</span>
             <Row>
               <Col sm md="5" className="text">
