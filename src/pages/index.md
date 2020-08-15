@@ -1,5 +1,11 @@
 ---
 templateKey: index-page
+heading: KJSCE Codecell
+subheading: Bits and Bytes
+---
+
+<!-- ---
+templateKey: index-page
 title: Great coffee with a conscience
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
@@ -67,4 +73,4 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
----
+--- -->
