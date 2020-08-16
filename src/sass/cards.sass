@@ -68,6 +68,43 @@ body
         width: 85% !important
         margin: 10px auto 15px 8% !important
 
+// Featured Card
+.featured-card
+    background-color: white
+
+    .featured-card-grid
+        display: grid
+        grid-template-columns: 1fr 1fr
+
+        .featured-image-holder
+            img
+                width: 100%
+
+        .featured-content
+            padding: 2em
+            h1
+                font-size: 2em
+                a
+                    color: black
+                    text-decoration: none
+                    &:hover
+                        text-decoration: underline $green
+            h3
+                font-size: 1.3em
+                color: $green
+            p
+                &:nth-of-type(2)
+                    color: darken($green, 4)
+
+@media only screen and (max-width: $breakpoint-tablet)
+    .featured-card
+        .featured-card-grid
+            display: grid
+            grid-template-columns: auto
+            grid-template-rows: auto auto
+            .featured-content
+                grid-row: 2/3
+
 .card
     margin: 50px 0
     height: 400px

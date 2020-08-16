@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql, StaticQuery } from "gatsby";
-import PreviewCompatibleImage from "./PreviewCompatibleImage";
+// import PreviewCompatibleImage from "./PreviewCompatibleImage";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { CardTitle } from "reactstrap";
@@ -27,19 +27,25 @@ class BlogRoll extends React.Component {
               <div>
                 {post.frontmatter.featuredimage ? (
                   <div className="featured-thumbnail">
-                    <PreviewCompatibleImage
+                    {/* <PreviewCompatibleImage
                       imageInfo={{
                         image: post.frontmatter.featuredimage,
                         alt: `featured image thumbnail for post ${post.frontmatter.title}`,
                       }}
+                      style={{
+                        width: "100%"
+                      }}
+                    /> */}
+                    <img
+                      src={post.frontmatter.featuredimage}
+                      style={{
+                        width: "100%",
+                      }}
                     />
                   </div>
                 ) : null}
-                <CardTitle style={{ padding: "15px", fontSize: "0.8rem" }}>
-                  <Link
-                    className="title is-size-4"
-                    to={post.fields.slug}
-                  >
+                <CardTitle style={{ padding: "15px", fontSize: "1em" }}>
+                  <Link className="title is-size-4" to={post.fields.slug}>
                     <span
                       style={{
                         color: "#242424",
@@ -100,13 +106,7 @@ export default () => (
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
-                featuredimage {
-                  childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
+                featuredimage
               }
             }
           }
@@ -116,3 +116,11 @@ export default () => (
     render={(data, count) => <BlogRoll data={data} count={count} />}
   />
 );
+// Save for later
+// featuredimage {
+//   childImageSharp {
+//     fluid(maxWidth: 120, quality: 100) {
+//       ...GatsbyImageSharpFluid
+//     }
+//   }
+// }

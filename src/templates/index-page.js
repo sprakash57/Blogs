@@ -15,21 +15,14 @@ import About from "../components/About";
 
 export const IndexPageTemplate = ({ data }) => (
   <div>
-    {/* {data.edges
-      .filter((e) => e.node.frontmatter.templateKey === "blog-post")
-      .map((element) => (
-        <>
-          <h2>{element.node.frontmatter.title}</h2>
-          <p>{element.node.frontmatter.description}</p>
-          <h5>{element.node.frontmatter.date}</h5>
-        </>
-      ))} */}
     <Jumbotron />
 
     <MyCard data={data} />
     <TopPosts data={data} />
+    
     {/* <Categories /> */}
     <SlickSlider />
+
     <RecentPosts data={data} />
     <About />
   </div>
@@ -78,9 +71,7 @@ export const indexPageQuery = graphql`
             author
             templateKey
             featuredpost
-            featuredimage {
-              relativePath
-            }
+            featuredimage
           }
           fields {
             slug

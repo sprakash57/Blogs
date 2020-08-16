@@ -23,8 +23,7 @@ const RecentPosts = ({ data }) => {
                       width="100%"
                       src={
                         e.node.frontmatter.featuredimage != null
-                          ? "/img/" +
-                            e.node.frontmatter.featuredimage.relativePath
+                          ? e.node.frontmatter.featuredimage
                           : "https://increasify.com.au/wp-content/uploads/2016/08/default-image.png"
                       }
                       alt={e.node.frontmatter.title}

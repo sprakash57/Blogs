@@ -8,6 +8,7 @@ featuredimage: /img/chemex.jpg
 description: >-
   We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
   Mountain coffee beans in our store next week.
+# category: Test Category 3
 tags:
   - jamaica
   - green beans
