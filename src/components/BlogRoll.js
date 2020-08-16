@@ -2,10 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql, StaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
-import "bootstrap/dist/css/bootstrap.min.css";
-
 import { CardTitle } from "reactstrap";
 
+import "bootstrap/dist/css/bootstrap.min.css";
 class BlogRoll extends React.Component {
   render() {
     const { data } = this.props;
@@ -20,26 +19,23 @@ class BlogRoll extends React.Component {
                 height: "auto",
                 margin: "2%",
                 backgroundColor: "white",
-                boxShadow: "6px 7px 15px #666",
+                boxShadow: "0px 7px 15px #b1b1b1",
               }}
               key={post.id}
             >
               <div>
                 {post.frontmatter.featuredimage ? (
-                  <div className="featured-thumbnail">
+                  <div style={{border: "none"}}>
                     <PreviewCompatibleImage
                       imageInfo={{
                         image: post.frontmatter.featuredimage,
-                        alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                      }}
-                      style={{
-                        width: "100%"
+                        alt: `Featured thumbnail for post ${post.frontmatter.title}`,
                       }}
                     />
                   </div>
                 ) : null}
-                <CardTitle style={{ padding: "15px", fontSize: "1em" }}>
-                  <Link className="title is-size-4" to={post.fields.slug}>
+                <CardTitle style={{ padding: "1em", fontSize: "1.4em" }}>
+                  <Link className="title" to={post.fields.slug}>
                     <span
                       style={{
                         color: "#242424",
@@ -49,10 +45,10 @@ class BlogRoll extends React.Component {
                       {post.frontmatter.title}
                     </span>
                   </Link>
-                  <span className="d-block pt-1">{post.frontmatter.date}</span>
+                  <span className="d-block mt-1 text-muted">{post.frontmatter.date}</span>
                 </CardTitle>
               </div>
-              <p className="pl-3 pr-3 text-justify">
+              <p className="px-4 text-justify">
                 {post.excerpt.charAt(0).toUpperCase() +
                   post.excerpt.substring(1, 150)}
                 ...

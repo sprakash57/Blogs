@@ -16,7 +16,7 @@ const Jumbotron = () => {
                 },
               },
               size: {
-                value: 3,
+                value: 3.5,
                 random: true,
                 anim: {
                   speed: 4,
@@ -36,7 +36,7 @@ const Jumbotron = () => {
             interactivity: {
               events: {
                 onhover: {
-                  enable: true,
+                  enable: false,
                   mode: "bubble",
                 },
               },
