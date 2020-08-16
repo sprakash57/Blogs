@@ -127,6 +127,7 @@ body
                 width: 100px
             .overlay-ribbon
                 top: -50%
+    
 
 .card
     margin: 50px 0
@@ -226,7 +227,7 @@ body
 .category
     z-index: 0
     position: relative
-    // margin: 15% 
+    margin: 10% 
     // Add the above line if you want 1.5 sliding screen
     
 .categoryImg
@@ -239,7 +240,10 @@ body
 
 .overlay
     position: absolute
+    // display: flex
+    // justify-content: center
     width: 95px
+    margin: auto
     padding: 5px
     border-radius: 5px
     border: none
@@ -272,7 +276,15 @@ body
         height: 150px
         border-radius: 50px
     .overlay
-        width: 70px
+        width: 80px
         font-size: 1rem
+        bottom: 40%
+        left: 28%
     .slider-category
         margin: 5%
+
+@media only screen and (max-width: $breakpoint-tablet)
+    .overlay
+        left: 30%
+        font-size: 0.8rem
+        

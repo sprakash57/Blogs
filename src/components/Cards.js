@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+// import { Link } from "gatsby";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "../sass/cards.sass";
@@ -32,6 +32,7 @@ export default function Cards({ data }) {
               <div className="featured-image-holder">
                 <img
                   src={"/img/" + e.node.frontmatter.featuredimage.relativePath}
+                  alt={e.node.frontmatter.title}
                 />
               </div>
             </div>
