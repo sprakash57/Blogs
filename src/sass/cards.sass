@@ -71,6 +71,8 @@ body
 // Featured Card
 .featured-card
     background-color: white
+    border-radius: 10px
+    position: relative
 
     .featured-card-grid
         display: grid
@@ -79,9 +81,15 @@ body
         .featured-image-holder
             img
                 width: 100%
+                border-top-left-radius: 358px
+                border-bottom-left-radius: 358px
+                border-top-right-radius: 10px
+                
 
         .featured-content
             padding: 2em
+            padding-top: 4.3rem 
+            
             h1
                 font-size: 2em
                 a
@@ -95,6 +103,12 @@ body
             p
                 &:nth-of-type(2)
                     color: darken($green, 4)
+            .overlay-ribbon
+                position: absolute
+                top: 5px
+                left: 15px
+            
+            
 
 @media only screen and (max-width: $breakpoint-tablet)
     .featured-card
@@ -104,6 +118,15 @@ body
             grid-template-rows: auto auto
             .featured-content
                 grid-row: 2/3
+                padding-top: 2em
+            .featured-image-holder img
+                border-radius: 10px !important
+                border-bottom-right-radius: 0px !important
+                border-bottom-left-radius: 0px !important
+            .ribbon
+                width: 100px
+            .overlay-ribbon
+                top: -50%
 
 .card
     margin: 50px 0
@@ -128,12 +151,14 @@ body
 
 
 .ribbon 
-    width: 150px
+    width: 151px
     height: 40px
     color: white
     line-height: 40px
     padding-left: 15px
     position: absolute
+    border-top-right-radius: 4px
+    border-bottom-right-radius: 4px
     left: -24px
     top: 15px
     z-index: 1
@@ -154,7 +179,7 @@ body
 .ribbon:after 
     height: 0
     width: 0
-    right: -15px
+    right: -14.3px
     border-top: 20px solid transparent
     border-bottom: 20px solid transparent
     border-left: 15px solid #a044ff

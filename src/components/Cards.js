@@ -59,15 +59,17 @@ export default function Cards({ data }) {
           >
             <div className="featured-card-grid">
               <div className="featured-content">
-                <h3>Featured</h3>
-                <h1><a href={e.node.fields.slug}>{e.node.frontmatter.title}</a></h1>
+                <div className="overlay-ribbon">
+                  <span className="ribbon">Featured</span>
+                </div>
+                <h1>
+                  <a href={e.node.fields.slug}>{e.node.frontmatter.title}</a>
+                </h1>
                 <p>{e.node.frontmatter.description}</p>
                 <p>{e.node.frontmatter.author}</p>
               </div>
               <div className="featured-image-holder">
-                <img
-                  src={e.node.frontmatter.featuredimage}
-                />
+                <img src={e.node.frontmatter.featuredimage} />
               </div>
             </div>
           </div>
