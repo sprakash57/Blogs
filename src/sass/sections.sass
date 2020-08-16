@@ -8,7 +8,7 @@
     img
         width: 100%
     ul, ol, dl
-            margin-left: 1em
+        margin-left: 1em
         
     
 // --------------Home Section---------------
@@ -18,19 +18,32 @@
     width: 100%
     background: linear-gradient(to bottom,#000,#111)
     // background-color: #3695c2
-    display: flex
-    justify-content: center
-    align-items: center
+    // display: flex
+    // justify-content: center
+    // align-items: center
+    position: relative
 
     .box
         display: flex
         flex-direction: column
         align-items: center
-
-
+        width: 100%
+        z-index: 1
+        position: absolute
+        top: 30%
+        
+canvas.tsparticles-canvas-el
+    height: 70vh 
+    position: absolute
+    
 @media only screen and (max-width: $breakpoint-tablet) 
     .section-home
         height: 65vh
+    canvas.tsparticles-canvas-el
+        height: 40vh !important
+        transform: scale(2) !important
+        width: 100% !important
+
 
 // -------------Top Posts Section--------------
 .header
