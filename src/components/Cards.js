@@ -66,7 +66,7 @@ export default function Cards({ data }) {
               </div>
               <div className="featured-image-holder">
                 <img
-                  src={e.node.frontmatter.featuredimage}
+                  src={"/img/" + e.node.frontmatter.featuredimage.relativePath}
                 />
               </div>
             </div>
