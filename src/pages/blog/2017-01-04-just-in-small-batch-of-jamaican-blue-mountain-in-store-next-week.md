@@ -1,7 +1,7 @@
 ---
 templateKey: "blog-post"
 author: "Codecell 303"
-title: "Just in: small batch of Jamaican Blue Mountain in store next week"
+title: "Just in: small batch of Jamaican Blue Mountain"
 date: 2017-01-04T15:04:10.000Z
 featuredpost: true
 featuredimage: /img/chemex.jpg

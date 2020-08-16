@@ -26,10 +26,12 @@ body
         grid-column-gap: 10px
         align-items: center
         background-color: white
-        height: 16em
+        height: auto
         
-        .scroll-card-img img
-            object-fit: cover
+        .scroll-card-img
+            width: 100%
+            height: 100%
+        
         .scroll-card-content
             display: flex
             flex-direction: column
@@ -62,6 +64,9 @@ body
 
             .scroll-card-author
                 padding: 1em 1.2em
+    .slider-category
+        width: 85% !important
+        margin: 10px auto 15px 8% !important
 
 .card
     margin: 50px 0
@@ -135,7 +140,7 @@ body
     margin: auto
     margin-bottom: 40px
 .slick-dots
-    margin: 10px auto !important
+    margin: 15px auto !important
 .slider-equalizer
     padding: 0 
 
@@ -159,7 +164,8 @@ body
 .category
     z-index: 0
     position: relative
-    margin: 15%
+    // margin: 15% 
+    // Add the above line if you want 1.5 sliding screen
     
 .categoryImg
     width: 200px
@@ -171,12 +177,15 @@ body
 
 .overlay
     position: absolute
-    width: 90px
+    width: 95px
+    padding: 5px
+    border-radius: 5px
+    border: none
     text-align: center
     background-color: white
     color: black
-    bottom: 45%
-    left: 30%
+    bottom: 43%
+    left: 26%
     text-decoration: none
     z-index: 1
     font-size: 1.25rem

@@ -7,7 +7,7 @@ import Jumbotron from "../components/Jumbotron";
 
 import MyCard from "../components/Cards";
 import TopPosts from "../components/TopPosts";
-import Categories from "../components/Categories";
+// import Categories from "../components/Categories";
 import RecentPosts from "../components/RecentPosts";
 import SlickSlider from "../components/SlickSlider";
 

@@ -29,7 +29,7 @@ const TopPosts = ({ data }) => {
                         : "https://increasify.com.au/wp-content/uploads/2016/08/default-image.png"
                     }
                     alt={e.node.frontmatter.title}
-                    className=" topPostImg"
+                    className="topPostImg"
                   />
                 </div>
               </Link>
