@@ -22,7 +22,7 @@ const Menu = (props) => {
         <NavbarBrand href="/" style={{ fontWeight: "bold", color: "#eee" }}>
           KJSCE Codecell
         </NavbarBrand>
-        <NavbarToggler onClick={toggle} />
+        <NavbarToggler onClick={toggle} style={{ background: "#666" }} />
         <Collapse
           isOpen={isOpen}
           navbar
