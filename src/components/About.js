@@ -28,11 +28,12 @@ const About = () => {
               </p>
             </Col>
             <Col sm md="6">
-              <div className="aboutHeader">Navlinks</div>
+              <div className="aboutHeader">Explore</div>
               <div className="pageLinks">
                 <Link to="/">Home</Link>
                 <Link to="/about">About</Link>
                 <Link to="/blog">All Articles</Link>
+                <Link to="/tags">Explore tags</Link>
               </div>
             </Col>
           </Row>
