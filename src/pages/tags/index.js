@@ -18,11 +18,11 @@ const TagsPage = ({
       <div className="container content">
         <div className="columns">
           <div
-            className="column is-10 is-offset-1"
+            className="column is-10 is-offset-1 mt-5 mb-3"
             style={{ marginBottom: '6rem' }}
           >
-            <h1 className="title is-size-2 is-bold-light">Tags</h1>
-            <ul className="taglist">
+            <h1 className="title is-size-2 is-bold-light">Categories</h1>
+            <ul className="taglist ml-3">
               {group.map((tag) => (
                 <li key={tag.fieldValue}>
                   <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
