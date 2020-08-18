@@ -34,9 +34,9 @@ export const BlogPostTemplate = ({
             <p className="blog-description">{description}</p>
             <PostContent content={content} className="blog-post-content" />
             {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
+              <div style={{ marginTop: `2em` }}>
+                <h4>Tags: </h4>
+                <ul className="taglist" style={{ listStyleType: "none" }}>
                   {tags.map((tag) => (
                     <li key={tag + `tag`}>
                       <Link to={`/categories/${kebabCase(tag)}/`}>{tag}</Link>
@@ -45,6 +45,11 @@ export const BlogPostTemplate = ({
                 </ul>
               </div>
             ) : null}
+            <div className="btn btn-secondary  mb-2">
+              <Link to="/" className="links">
+                Go Back
+              </Link>
+            </div>
           </div>
         </div>
       </div>
