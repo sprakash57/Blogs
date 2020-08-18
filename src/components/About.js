@@ -30,10 +30,18 @@ const About = () => {
             <Col sm md="6">
               <div className="aboutHeader">Explore</div>
               <div className="pageLinks">
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/blog">All Articles</Link>
-                <Link to="/categories">Explore categories</Link>
+                <Link to="/">
+                  <i className="fa fa-home"></i> Home
+                </Link>
+                <Link to="/about">
+                  <i className="fa fa-asterisk"></i> About
+                </Link>
+                <Link to="/blog">
+                  <i className="fa fa-box-open"></i> All Articles
+                </Link>
+                <Link to="/categories">
+                  <i className="fa fa-book"></i> Explore categories
+                </Link>
               </div>
             </Col>
           </Row>
