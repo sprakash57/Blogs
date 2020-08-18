@@ -47,6 +47,8 @@ body
             align-items: start
 
             padding: 1.4em 1.2em
+            .tags
+                display: flex
             p
                 font-size: 0.9rem
             h5 a
@@ -54,7 +56,8 @@ body
                 &:hover
                     text-decoration: underline $green
         .scroll-card-author
-            padding: 0
+            padding: 0 !important
+            margin: 0 !important
 
 @media only screen and (min-width: $breakpoint-tablet)
     .scroll-cards

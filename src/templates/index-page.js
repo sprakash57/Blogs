@@ -71,6 +71,7 @@ export const indexPageQuery = graphql`
             author
             templateKey
             featuredpost
+            tags
             featuredimage{
               relativePath
             }

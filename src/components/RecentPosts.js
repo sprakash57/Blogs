@@ -7,6 +7,10 @@ import "../sass/cards.sass";
 import { Container } from "reactstrap";
 
 const RecentPosts = ({ data }) => {
+
+  var characterNum = (window.innerWidth < 768) ? 80 : 50;
+  window.onresize = () => characterNum = (window.innerWidth < 768) ? 80 : 50;
+
   return (
     <div className="cover">
       <Container>
@@ -41,8 +45,19 @@ const RecentPosts = ({ data }) => {
                       {e.node.frontmatter.title}
                     </Link>
                   </h5>
-                  <p>
-                    {e.node.frontmatter.description.substring(0, 100) + "..."}
+                  {/* Badges for tags */}
+                  <div class="tags">
+                    {e.node.frontmatter.tags.map((tag) => (
+                      <span
+                        className="badge badge-pill badge-success mr-2"
+                        style={{ fontSize: "1em" }}
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <p className="mt-2">
+                    {e.node.frontmatter.description.substring(0, characterNum) + "..."}
                   </p>
                   <p className="text-success scroll-card-author">
                     {e.node.frontmatter.author}
