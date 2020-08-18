@@ -18,7 +18,10 @@ const TopPosts = ({ data }) => {
           .filter((e) => e.node.frontmatter.templateKey === "blog-post")
           .map((e) => (
             <div className="scroll-card">
-              <Link to={e.node.fields.slug}>
+              <Link
+                to={e.node.fields.slug}
+                className="scroll-card-img-holder"
+              >
                 <div className="scroll-card-img">
                   <img
                     width="100%"
@@ -39,9 +42,9 @@ const TopPosts = ({ data }) => {
                     {e.node.frontmatter.title}
                   </Link>
                 </h5>
-                <p>
-                  {e.node.frontmatter.description.substring(0, 125) + "..."}
-                </p>
+                {/* <p>
+                  {e.node.frontmatter.description.substring(0, 100) + "..."}
+                </p> */}
                 <p className="text-success scroll-card-author">
                   {e.node.frontmatter.author}
                 </p>
