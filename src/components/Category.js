@@ -9,13 +9,13 @@ export default ({ title, img }) => {
     <div className="category">
       <Link to="/">
         <div className="overlay">{title}</div>
-        <CardImg
-          width="100%"
-          src={img}
-          alt="Card image cap"
-          className="categoryImg"
-        ></CardImg>
       </Link>
+      <CardImg
+        width="100%"
+        src={img}
+        alt="Card image cap"
+        className="categoryImg"
+      ></CardImg>
     </div>
   );
 };
