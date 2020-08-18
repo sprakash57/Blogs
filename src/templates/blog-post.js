@@ -46,9 +46,9 @@ export const BlogPostTemplate = ({
               </div>
             ) : null}
             <div className="btn btn-secondary  mb-2">
-              <Link to="/" className="links">
+              <div className="links" onClick={() => window.history.back()}>
                 <i className="fa fa-angle-double-left"></i> Go Back
-              </Link>
+              </div>
             </div>
           </div>
         </div>
