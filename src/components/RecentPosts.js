@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
-import "bootstrap/dist/css/bootstrap.min.css";
 
+import "bootstrap/dist/css/bootstrap.min.css";
 import "../sass/sections.sass";
 import "../sass/cards.sass";
 import { Container } from "reactstrap";
