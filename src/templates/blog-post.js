@@ -47,7 +47,7 @@ export const BlogPostTemplate = ({
             ) : null}
             <div className="btn btn-secondary  mb-2">
               <Link to="/" className="links">
-                Go Back
+                <i className="fa fa-angle-double-left"></i> Go Back
               </Link>
             </div>
           </div>

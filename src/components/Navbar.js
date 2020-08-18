@@ -20,6 +20,7 @@ const Menu = (props) => {
     <Navbar light expand="md" className="background-blue sticky-top">
       <div className="container pr-3">
         <NavbarBrand href="/" style={{ fontWeight: "bold", color: "#eee" }}>
+          <img src="/img/logowhite.png" alt="" style={{ width: "30px" }} />{" "}
           KJSCE Codecell
         </NavbarBrand>
         <NavbarToggler onClick={toggle} style={{ background: "#666" }} />
@@ -32,18 +33,18 @@ const Menu = (props) => {
         >
           <Nav className="ml-auto" navbar>
             <NavItem className="mr-3">
-              <Link to="/" className="links">
-                Home
+              <Link to="/" className="links mr-2">
+                <i className="fa fa-home"></i> Home
               </Link>
             </NavItem>
             <NavItem className="mr-3">
-              <Link to="/blog" className="links">
-                All Articles
+              <Link to="/blog" className="links mr-2">
+                <i className="fa fa-box-open"></i> All Articles
               </Link>
             </NavItem>
             <NavItem>
               <Link to="/about" className="links">
-                About
+                <i className="fa fa-asterisk"></i> About
               </Link>
             </NavItem>
           </Nav>
