@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import { Link } from "gatsby";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -7,11 +7,14 @@ import "../sass/cards.sass";
 import { Container } from "reactstrap";
 
 const RecentPosts = ({ data }) => {
+
+  const [characterNum, setCNUM] = useState(200)
+
   useEffect(() => {
-    var theWindow = window != undefined ? window : null;
-    var characterNum = theWindow.innerWidth < 768 ? 80 : 50;
+    let theWindow = window != undefined ? window : null;
+    setCNUM(theWindow.innerWidth < 768 ? 80 : 50);
     theWindow.onresize = () =>
-      (characterNum = theWindow.innerWidth < 768 ? 80 : 50);
+      (setCNUM(theWindow.innerWidth < 768 ? 80 : 50));
   }, []);
 
   return (
