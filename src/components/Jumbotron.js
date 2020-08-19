@@ -1,7 +1,22 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useRef, useEffect } from "react";
 import Particles from "react-particles-js";
 
+import { TimelineLite, Power3 } from "gsap";
+
 const Jumbotron = () => {
+  let titleName = useRef(null);
+  let tagLine = useRef(null);
+
+  let tl = new TimelineLite();
+
+  useEffect(() => {
+    tl.from(titleName, 1.2, {
+      y: -1280,
+      ease: Power3.easeOut,
+    })
+      .from(titleName, 2.5, { scale: 1.8, ease: Power3.easeOut }, 0.2)
+      .from(tagLine, 2, { opacity: "0", ease: Power3.easeIn }, 0.2);
+  });
   return (
     <Fragment>
       <section className="section-home">
@@ -10,7 +25,7 @@ const Jumbotron = () => {
           params={{
             particles: {
               number: {
-                value: 160,
+                value: 180,
                 density: {
                   enable: false,
                 },
@@ -36,7 +51,7 @@ const Jumbotron = () => {
             interactivity: {
               events: {
                 onhover: {
-                  enable: false,
+                  enable: true,
                   mode: "bubble",
                 },
               },
@@ -57,7 +72,11 @@ const Jumbotron = () => {
         />
         <div className="box">
           <div className="d-none d-md-block">
-            <h1 style={{ lineHeight: 0.9 }} className="white">
+            <h1
+              style={{ lineHeight: 0.9 }}
+              className="white"
+              ref={(el) => (titleName = el)}
+            >
               <span
                 style={{ fontSize: "1.2em", textShadow: "3px 2px #777" }}
                 className="d-block m-0"
@@ -71,6 +90,7 @@ const Jumbotron = () => {
             <h3
               align="center"
               className="white"
+              ref={(el) => (tagLine = el)}
               style={{ textShadow: "1px 2px #777", marginTop: "1em" }}
             >
               Changing the world, one bit at a time
