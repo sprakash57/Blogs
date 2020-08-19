@@ -8,8 +8,10 @@ import { Container } from "reactstrap";
 
 const RecentPosts = ({ data }) => {
 
-  var characterNum = (window.innerWidth < 768) ? 80 : 50;
-  window.onresize = () => characterNum = (window.innerWidth < 768) ? 80 : 50;
+  var theWindow = (window != undefined) ? window : null;
+
+  var characterNum = (theWindow.innerWidth < 768) ? 80 : 50;
+  theWindow.onresize = () => characterNum = (theWindow.innerWidth < 768) ? 80 : 50;
 
   return (
     <div className="cover">
