@@ -1,15 +1,16 @@
 import React, { Fragment } from "react";
 import Slider from "react-slick";
+import { Link } from "gatsby";
+import { CardImg } from "reactstrap";
+import TagsYAML from '../admin-config/tagslist.yml';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { Link, useStaticQuery, graphql } from "gatsby";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "../sass/cards.sass";
 
-import { CardImg } from "reactstrap";
 
 const _ = require("lodash");
 
@@ -59,28 +60,31 @@ const settings = {
 };
 
 const SlickSlider = () => {
-  const data = useStaticQuery(graphql`
-    query categorySliderQuery {
-      allMarkdownRemark {
-        edges {
-          node {
-            frontmatter {
-              tags
-              templateKey
-            }
-          }
-        }
-      }
-    }
-  `);
 
-  let tagsArray = [];
-  data.allMarkdownRemark.edges.forEach((edge) => {
-    if (edge.node.frontmatter.templateKey === "blog-post")
-      edge.node.frontmatter.tags.forEach((tag) => tagsArray.push(tag));
-  });
+  // const data = useStaticQuery(graphql`
+  //   query categorySliderQuery {
+  //     allMarkdownRemark {
+  //       edges {
+  //         node {
+  //           frontmatter {
+  //             tags
+  //             templateKey
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
 
-  var finalTagsArray = _.uniq(tagsArray);
+  // let tagsArray = [];
+  // data.allMarkdownRemark.edges.forEach((edge) => {
+  //   if (edge.node.frontmatter.templateKey === "blog-post")
+  //     edge.node.frontmatter.tags.forEach((tag) => tagsArray.push(tag));
+  // });
+
+  // var finalTagsArray = _.uniq(tagsArray);
+  
+  var finalTagsArray = TagsYAML.tagslist
 
   return (
     <Fragment>
@@ -89,15 +93,15 @@ const SlickSlider = () => {
       <div className="slider-category">
         <div className="slider-equalizer">
           <Slider {...settings}>
-            {finalTagsArray.map((tag) => (
+            {finalTagsArray.map((tagObj) => (
               <div className="category">
-                <Link to={"/categories/" + _.kebabCase(tag)}>
-                  <div className="overlay">{_.startCase(tag)}</div>
+                <Link to={"/categories/" + _.kebabCase(tagObj.tag)}>
+                  <div className="overlay">{_.startCase(tagObj.tag)}</div>
                 </Link>
                 <CardImg
                   width="100%"
-                  src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-                  alt="Card image cap"
+                  src={tagObj.image}
+                  alt={tagObj.tag}
                   className="categoryImg"
                 ></CardImg>
               </div>
