@@ -7,11 +7,12 @@ import "../sass/cards.sass";
 import { Container } from "reactstrap";
 
 const RecentPosts = ({ data }) => {
-
-  var theWindow = (window != undefined) ? window : null;
-
-  var characterNum = (theWindow.innerWidth < 768) ? 80 : 50;
-  theWindow.onresize = () => characterNum = (theWindow.innerWidth < 768) ? 80 : 50;
+  useEffect(() => {
+    var theWindow = window != undefined ? window : null;
+    var characterNum = theWindow.innerWidth < 768 ? 80 : 50;
+    theWindow.onresize = () =>
+      (characterNum = theWindow.innerWidth < 768 ? 80 : 50);
+  }, []);
 
   return (
     <div className="cover">
@@ -59,7 +60,8 @@ const RecentPosts = ({ data }) => {
                     ))}
                   </div>
                   <p className="mt-2">
-                    {e.node.frontmatter.description.substring(0, characterNum) + "..."}
+                    {e.node.frontmatter.description.substring(0, characterNum) +
+                      "..."}
                   </p>
                   <p className="text-success scroll-card-author">
                     {e.node.frontmatter.author}

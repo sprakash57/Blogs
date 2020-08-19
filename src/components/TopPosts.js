@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { Link } from "gatsby";
 
@@ -9,11 +9,12 @@ import "../sass/cards.sass";
 import { Container } from "reactstrap";
 
 const TopPosts = ({ data }) => {
-
-  var theWindow = (window != undefined) ? window : null;
-
-  var characterNum = (theWindow.innerWidth < 768) ? 80 : 50;
-  theWindow.onresize = () => characterNum = (theWindow.innerWidth < 768) ? 80 : 50;
+  useEffect(() => {
+    var theWindow = window != undefined ? window : null;
+    var characterNum = theWindow.innerWidth < 768 ? 80 : 50;
+    theWindow.onresize = () =>
+      (characterNum = theWindow.innerWidth < 768 ? 80 : 50);
+  }, []);
 
   return (
     <Container>
@@ -24,10 +25,7 @@ const TopPosts = ({ data }) => {
           .filter((e) => e.node.frontmatter.templateKey === "blog-post")
           .map((e) => (
             <div className="scroll-card">
-              <Link
-                to={e.node.fields.slug}
-                className="scroll-card-img-holder"
-              >
+              <Link to={e.node.fields.slug} className="scroll-card-img-holder">
                 <div className="scroll-card-img">
                   <img
                     width="100%"
@@ -51,14 +49,20 @@ const TopPosts = ({ data }) => {
 
                 {/* Badges for tags */}
                 <div class="tags">
-                  {e.node.frontmatter.tags.map(tag => (
-                    <span className="badge badge-pill badge-success mr-2" style={{fontSize: "1em"}}>{tag}</span>
+                  {e.node.frontmatter.tags.map((tag) => (
+                    <span
+                      className="badge badge-pill badge-success mr-2"
+                      style={{ fontSize: "1em" }}
+                    >
+                      {tag}
+                    </span>
                   ))}
                 </div>
-                
+
                 {/* Description */}
                 <p className="mt-2">
-                  {e.node.frontmatter.description.substring(0, characterNum) + "..."}
+                  {e.node.frontmatter.description.substring(0, characterNum) +
+                    "..."}
                 </p>
 
                 <p className="text-success scroll-card-author">
