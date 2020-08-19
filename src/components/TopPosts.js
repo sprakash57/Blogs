@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { Link } from "gatsby";
 
@@ -9,6 +9,15 @@ import "../sass/cards.sass";
 import { Container } from "reactstrap";
 
 const TopPosts = ({ data }) => {
+  const [characterNum, setCNUM] = useState(200)
+
+  useEffect(() => {
+    let theWindow = window != undefined ? window : null;
+    setCNUM(theWindow.innerWidth < 768 ? 80 : 50);
+    theWindow.onresize = () =>
+      (setCNUM(theWindow.innerWidth < 768 ? 80 : 50));
+  }, []);
+
   return (
     <Container>
       <div className="header">Top Posts</div>
@@ -18,7 +27,7 @@ const TopPosts = ({ data }) => {
           .filter((e) => e.node.frontmatter.templateKey === "blog-post")
           .map((e) => (
             <div className="scroll-card">
-              <Link to={e.node.fields.slug}>
+              <Link to={e.node.fields.slug} className="scroll-card-img-holder">
                 <div className="scroll-card-img">
                   <img
                     width="100%"
@@ -29,7 +38,7 @@ const TopPosts = ({ data }) => {
                         : "https://increasify.com.au/wp-content/uploads/2016/08/default-image.png"
                     }
                     alt={e.node.frontmatter.title}
-                    className=" topPostImg"
+                    className="topPostImg"
                   />
                 </div>
               </Link>
@@ -39,9 +48,25 @@ const TopPosts = ({ data }) => {
                     {e.node.frontmatter.title}
                   </Link>
                 </h5>
-                <p>
-                  {e.node.frontmatter.description.substring(0, 125) + "..."}
+
+                {/* Badges for tags */}
+                <div class="tags">
+                  {e.node.frontmatter.tags.map((tag) => (
+                    <span
+                      className="badge badge-pill badge-success mr-2"
+                      style={{ fontSize: "1em" }}
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Description */}
+                <p className="mt-2">
+                  {e.node.frontmatter.description.substring(0, characterNum) +
+                    "..."}
                 </p>
+
                 <p className="text-success scroll-card-author">
                   {e.node.frontmatter.author}
                 </p>
