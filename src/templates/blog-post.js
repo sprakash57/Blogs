@@ -46,6 +46,7 @@ export const BlogPostTemplate = ({
               </div>
             ) : null}
             <div className="btn btn-secondary  mb-2">
+              {/* eslint-disable-next-line */}
               <div className="links" onClick={() => window.history.back()}>
                 <ChevronDoubleLeft /> Go Back
               </div>
