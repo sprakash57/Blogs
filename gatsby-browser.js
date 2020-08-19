@@ -1,1 +1,1 @@
-import "./src/sass/global.sass"
+import "./src/sass/global.sass";

@@ -2,7 +2,12 @@ import React from "react";
 import { Link } from "gatsby";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../sass/sections.sass";
-
+import {
+  HouseFill,
+  CodeSlash,
+  Grid1x2Fill,
+  BugFill,
+} from "react-bootstrap-icons";
 import { Row, Col } from "reactstrap";
 
 const About = () => {
@@ -31,16 +36,16 @@ const About = () => {
               <div className="aboutHeader">Explore</div>
               <div className="pageLinks">
                 <Link to="/">
-                  <i className="fa fa-home"></i> Home
+                  <HouseFill /> Home
                 </Link>
                 <Link to="/about">
-                  <i className="fa fa-asterisk"></i> About
+                  <CodeSlash /> About
                 </Link>
                 <Link to="/blog">
-                  <i className="fa fa-box-open"></i> All Articles
+                  <Grid1x2Fill /> All Articles
                 </Link>
                 <Link to="/categories">
-                  <i className="fa fa-book"></i> Explore categories
+                  <BugFill /> Explore categories
                 </Link>
               </div>
             </Col>

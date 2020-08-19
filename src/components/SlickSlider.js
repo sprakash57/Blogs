@@ -90,17 +90,17 @@ const SlickSlider = () => {
         <div className="slider-equalizer">
           <Slider {...settings}>
             {finalTagsArray.map((tag) => (
-              <Link to={"/categories/" + _.kebabCase(tag)}>
-                <div className="category">
+              <div className="category">
+                <Link to={"/categories/" + _.kebabCase(tag)}>
                   <div className="overlay">{_.startCase(tag)}</div>
-                  <CardImg
-                    width="100%"
-                    src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-                    alt="Card image cap"
-                    className="categoryImg"
-                  ></CardImg>
-                </div>
-              </Link>
+                </Link>
+                <CardImg
+                  width="100%"
+                  src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                  alt="Card image cap"
+                  className="categoryImg"
+                ></CardImg>
+              </div>
             ))}
           </Slider>
         </div>

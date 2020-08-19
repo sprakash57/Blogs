@@ -7,7 +7,7 @@ import {
   Nav,
   NavItem,
 } from "reactstrap";
-
+import { HouseFill, CodeSlash, Grid1x2Fill } from "react-bootstrap-icons";
 import { Link } from "gatsby";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../sass/navbar.sass";
@@ -34,17 +34,17 @@ const Menu = (props) => {
           <Nav className="ml-auto" navbar>
             <NavItem className="mr-3">
               <Link to="/" className="links mr-2">
-                <i className="fa fa-home"></i> Home
+                <HouseFill size={20} /> Home
               </Link>
             </NavItem>
             <NavItem className="mr-3">
               <Link to="/blog" className="links mr-2">
-                <i className="fa fa-box-open"></i> All Articles
+                <Grid1x2Fill /> All Articles
               </Link>
             </NavItem>
             <NavItem>
               <Link to="/about" className="links">
-                <i className="fa fa-asterisk"></i> About
+                <CodeSlash size={20} /> About
               </Link>
             </NavItem>
           </Nav>

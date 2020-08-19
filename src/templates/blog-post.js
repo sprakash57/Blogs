@@ -6,7 +6,7 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import "../sass/sections.sass";
-
+import { ChevronDoubleLeft } from "react-bootstrap-icons";
 export const BlogPostTemplate = ({
   content,
   contentComponent,
@@ -47,7 +47,7 @@ export const BlogPostTemplate = ({
             ) : null}
             <div className="btn btn-secondary  mb-2">
               <div className="links" onClick={() => window.history.back()}>
-                <i className="fa fa-angle-double-left"></i> Go Back
+                <ChevronDoubleLeft /> Go Back
               </div>
             </div>
           </div>
