@@ -1,11 +1,14 @@
 import React, { useRef, useEffect } from "react";
 import { Container } from "reactstrap";
 
-import { TimelineLite, Power3 } from "gsap";
+import { TimelineLite, Power3, gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../sass/cards.sass";
 import "../sass/sections.sass";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Cards({ data }) {
   let textContentHeader = useRef(null);
@@ -18,22 +21,32 @@ export default function Cards({ data }) {
   let t2 = new TimelineLite();
 
   useEffect(() => {
-    tl.from(textContentHeader, 1, {
-      opacity: "0",
-      scrollTrigger: ".trigger",
+    tl.from(textContentHeader, 2, {
+      autoAlpha: "0",
+      y: 200,
+      delay: 1,
+      scrollTrigger: { trigger: textContentDesc },
     })
-      .from(textContentDesc, 3.5, {
-        opacity: "0",
+      .from(textContentDesc, 3, {
+        autoAlpha: "0",
+        y: 100,
       })
       .from(ribbonAnimation, 0.5, {
-        opacity: "0",
+        autoAlpha: "0",
         x: -50,
         ease: Power3.easeOut,
       });
-    t2.from(cardAnimation, 2, { y: 500, ease: Power3.easeOut }).from(
+    t2.from(cardAnimation, 2, { y: 500, ease: Power3.easeOut }, 0.2);
+    gsap.from(
       cardImage,
-      2,
-      { filter: "grayscale(100%)", scale: 0.95, scrollTrigger: ".trigger" }
+      3,
+      {
+        filter: "grayscale(100%)",
+        // autoAlpha: "0",
+        scale: 0.95,
+        delay: 1,
+      },
+      0
     );
   });
   return (
