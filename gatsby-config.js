@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'KJSCE Codecell',
+    title: 'KJSCE CodeCell',
     description:
       'This is KJSCE Codecell\'s tech blog. Here, we will share our experiences with technologies and help you get started with yours.',
   },

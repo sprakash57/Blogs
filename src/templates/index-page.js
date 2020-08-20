@@ -1,32 +1,40 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
+
 import { graphql } from "gatsby";
+import { TweenMax } from "gsap";
 
 import Layout from "../components/Layout";
 import Jumbotron from "../components/Jumbotron";
-
 import MyCard from "../components/Cards";
 import TopPosts from "../components/TopPosts";
 // import Categories from "../components/Categories";
 import RecentPosts from "../components/RecentPosts";
 import SlickSlider from "../components/SlickSlider";
-
 import About from "../components/About";
+import "../sass/sections.sass";
 
-export const IndexPageTemplate = ({ data }) => (
-  <div>
-    <Jumbotron />
+export const IndexPageTemplate = ({ data }) => {
+  let appln = useRef(null);
 
-    <MyCard data={data} />
-    <TopPosts data={data} />
-    
-    {/* <Categories /> */}
-    <SlickSlider />
+  useEffect(() => {
+    TweenMax.to(appln, 0, { css: { visibility: "visible" } });
+    console.log(appln);
+  });
+  return (
+    <div className="main" ref={(el) => (appln = el)}>
+      <Jumbotron />
 
-    <RecentPosts data={data} />
-    <About />
-  </div>
-);
+      <MyCard data={data} />
+      <TopPosts data={data} />
+
+      <SlickSlider />
+
+      <RecentPosts data={data} />
+      <About />
+    </div>
+  );
+};
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -72,7 +80,7 @@ export const indexPageQuery = graphql`
             templateKey
             featuredpost
             tags
-            featuredimage{
+            featuredimage {
               relativePath
             }
           }
