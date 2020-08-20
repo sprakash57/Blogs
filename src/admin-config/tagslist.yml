@@ -4,3 +4,9 @@ tagslist:
     image: https://s3.amazonaws.com/prod-www-blackline-com/blog/wp-content/uploads/2019/01/29163118/A-Conversation-With-BlackLines-Machine-Learning-Experts-720x405.jpg
   - tag: AI
     image: https://bostonglobe-prod.cdn.arcpublishing.com/resizer/FP1GJPmPpu61YAv553ZgMRpHvNk=/1440x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/HCIJCIQ2UAI6VKP2L3WHYVGSUE.jpg
+  - tag: Cyber Security
+    image: https://ichef.bbci.co.uk/images/ic/720x405/p04wv6mk.jpg
+  - image: https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png
+    tag: Web Dev
+  - tag: App Dev
+    image: https://cdn-images-1.medium.com/max/626/1*o85c5I6T07x3ZZCAWPgDfg.jpeg
