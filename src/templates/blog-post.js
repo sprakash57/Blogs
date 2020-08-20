@@ -38,9 +38,8 @@ export const BlogPostTemplate = ({
               className="card"
               style={{
                 height: "auto",
-                padding: "15px",
                 margin: "1% 0",
-                borderRadius: "15px",
+                borderRadius: "20px",
                 zIndex: "10",
               }}
             >

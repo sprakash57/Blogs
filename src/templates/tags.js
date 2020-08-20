@@ -2,16 +2,22 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
+import { ListGroup, ListGroupItem } from "reactstrap";
+
+import "../sass/variables.sass";
 
 class TagRoute extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges;
     const postLinks = posts.map((post) => (
-      <li key={post.node.fields.slug}>
-        <Link to={post.node.fields.slug}>
-          <h2 className="is-size-2">{post.node.frontmatter.title}</h2>
+      <ListGroupItem key={post.node.fields.slug}>
+        <Link to={post.node.fields.slug} className="hover-underline">
+          <h2 className="is-size-3">
+            {post.node.frontmatter.title}
+          </h2>
         </Link>
-      </li>
+        <p>{post.node.frontmatter.author}</p>
+      </ListGroupItem>
     ));
     const tag = this.props.pageContext.tag;
     const title = this.props.data.site.siteMetadata.title;
@@ -22,7 +28,7 @@ class TagRoute extends React.Component {
 
     return (
       <Layout>
-        <section className="section">
+        <section className="section mt-3">
           <Helmet title={`${tag} | ${title}`} />
           <div className="container content">
             <div className="columns">
@@ -31,7 +37,7 @@ class TagRoute extends React.Component {
                 style={{ marginBottom: "6rem" }}
               >
                 <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
-                <ul className="taglist">{postLinks}</ul>
+                <ListGroup>{postLinks}</ListGroup>
                 <p>
                   <Link to="/categories/">Browse all tags</Link>
                 </p>
@@ -66,6 +72,7 @@ export const tagPageQuery = graphql`
           }
           frontmatter {
             title
+            author
           }
         }
       }
