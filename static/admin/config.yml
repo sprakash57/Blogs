@@ -67,16 +67,17 @@ collections:
   - name: "tags"
     label: "Tags"
     files:
-      - label: "Tags List"
+      - label: "Tags"
         name : "tagslist"
         file: "src/admin-config/tagslist.yml"
         fields:
          - {label: Title, name: title, widget: string}
-         - label: Tags List
+         - label: Tags
            name: tagslist
            widget: list
            fields:
-            - {label: Tag, name: tag, widget: string}
+            - {label: Tag Name, name: name, widget: string}
+            - {label: Icon URL, name: icon, widget: string}
             - {label: Image URL, name: image, widget: string}
          
             

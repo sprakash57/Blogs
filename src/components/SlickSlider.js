@@ -93,15 +93,15 @@ const SlickSlider = () => {
       <div className="slider-category">
         <div className="slider-equalizer">
           <Slider {...settings}>
-            {finalTagsArray.map((tagObj) => (
+            {finalTagsArray.map((tag) => (
               <div className="category">
-                <Link to={"/categories/" + _.kebabCase(tagObj.tag)}>
-                  <div className="overlay">{_.startCase(tagObj.tag)}</div>
+                <Link to={"/categories/" + _.kebabCase(tag.name)}>
+                  <div className="overlay">{_.startCase(tag.name)}</div>
                 </Link>
                 <CardImg
                   width="100%"
-                  src={tagObj.image}
-                  alt={tagObj.tag}
+                  src={tag.icon}
+                  alt={tag.name}
                   className="categoryImg"
                 ></CardImg>
               </div>

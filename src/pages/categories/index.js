@@ -19,13 +19,13 @@ const TagsPage = ({ data }) => {
           <div className="category-list">
             {tagsdata.tagslist.map((tag) => (
               <Link
-                to={"/categories/" + kebabCase(tag.tag)}
+                to={"/categories/" + kebabCase(tag.name)}
                 className="category-list-category"
                 style={{
                   background: `url('${tag.image}')`,
                 }}
               >
-                <h1>{tag.tag}</h1>
+                <h1>{tag.name}</h1>
               </Link>
             ))}
           </div>
