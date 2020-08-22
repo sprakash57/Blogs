@@ -2,11 +2,21 @@ title: Tags
 tagslist:
   - tag: ML
     image: https://s3.amazonaws.com/prod-www-blackline-com/blog/wp-content/uploads/2019/01/29163118/A-Conversation-With-BlackLines-Machine-Learning-Experts-720x405.jpg
+    name: ML
+    icon: https://pi.tedcdn.com/r/pf.tedcdn.com/images/playlists/what-happens-when-the-robots-take-our-jobs_4196162754.jpg?quality=89&w=256
   - tag: AI
     image: https://bostonglobe-prod.cdn.arcpublishing.com/resizer/FP1GJPmPpu61YAv553ZgMRpHvNk=/1440x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/HCIJCIQ2UAI6VKP2L3WHYVGSUE.jpg
+    icon: https://www.locustec.com/wp-content/uploads/2020/05/locus_graphic_ai_cover-256x256.jpg
+    name: AI
   - tag: Cyber Security
     image: https://ichef.bbci.co.uk/images/ic/720x405/p04wv6mk.jpg
+    icon: https://ichef.bbci.co.uk/images/ic/720x405/p04wv6mk.jpg
+    name: Cyber Security
   - image: https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png
     tag: Web Dev
+    name: Web Dev
+    icon: https://www.cphosting.in/wp-content/uploads/2017/08/web-development.png
   - tag: App Dev
-    image: https://cdn-images-1.medium.com/max/626/1*o85c5I6T07x3ZZCAWPgDfg.jpeg
+    image: https://www.w2ssolutions.com/blog/wp-content/uploads/2019/07/ios-app-development-india.png
+    name: App Dev
+    icon: https://cdn-images-1.medium.com/max/626/1*o85c5I6T07x3ZZCAWPgDfg.jpeg
