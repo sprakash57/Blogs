@@ -16,14 +16,14 @@ const TagsPage = ({ data }) => {
         <Helmet title={`Categories | ${data.site.siteMetadata.title}`} />
         <Container className="content mt-5">
           <h1>Categories</h1>
-          <div className="category-list">
+          <div className="category-list mt-4">
             {tagsdata.tagslist.map((tag) => (
               <Link
                 to={"/categories/" + kebabCase(tag.name)}
-                className="category-list-category"
                 style={{
-                  background: `url('${tag.image}')`,
+                  backgroundImage: `url('${tag.image}')`,
                 }}
+                className="category-list-category"
               >
                 <h1>{tag.name}</h1>
               </Link>
