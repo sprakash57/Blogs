@@ -5,7 +5,7 @@ date: 2020-08-23T19:36:33.244Z
 description: |
   “Technology is best when it brings people together”
 featuredpost: false
-featuredimage: /img/1_lxyneculxaognfrl1kv2_a.gif
+featuredimage: /img/codecell.jpeg
 tags:
   - Hackathon
   - Coding
