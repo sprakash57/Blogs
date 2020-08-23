@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Python Automation Workshop
 date: 2019-08-20T12:33:31.974Z
 description: A workshop to commence an era of automated tasks
-featuredpost: true
+featuredpost: false
 featuredimage: /img/pythonatuomationbanner.png
 tags:
   - python
