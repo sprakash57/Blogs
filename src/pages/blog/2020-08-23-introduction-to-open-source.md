@@ -8,13 +8,7 @@ featuredimage: /img/o_source.jpeg
 tags:
   - open-source
   - Linux
-  - GNU
-  - Mozilla
-  - Git
-  - GitHub
   - GSoC
-  - RGSoC
-  - HacktoberFest
 ---
 ![open-source](/img/o2.jpeg)
 
