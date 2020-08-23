@@ -16,6 +16,8 @@ tags:
   - RGSoC
   - HacktoberFest
 ---
+![open-source](/img/o2.jpeg)
+
 <!--StartFragment-->
 
 ## What is Open-source software?
@@ -80,13 +82,7 @@ The ‘what if?’ question always arises in our mind before we start contributi
 <!--StartFragment-->
 
 1. First and foremost, you must choose a programming language of your choice. Once you are done with selecting a programming language, search for a project that is interesting to you.
-
-
-
 2. After you find a project you want to contribute to, get to know Git and GitHub. On GitHub, you can contribute to projects by submitting issues and contributing code. Submitting issues means sending messages about errors in applications and suggesting ways to fix them. Contributing code involves sending pull requests with your corrections and improvements.
-
-
-
 3. Next, find issues and bugs with the project you selected earlier. A lot of open source projects label their issues to conveniently track them. A lot of projects use labels like beginner, easy, starter, good first bug, low hanging fruit, bitesize, trivial, easy fix, and new contributor. You can further narrow down your search based on the programming language you’re comfortable with, by adding language: name to your search query.
 
 <!--EndFragment-->
@@ -128,11 +124,7 @@ Fork and clone the repo on your local machine and fix the bug. Once you push the
 
 <!--EndFragment-->
 
-6. <!--StartFragment-->A pull request doesn’t have to represent finished work. It’s usually better to open a pull request early on, so others can watch or give feedback on your progress. Just mark it as a “WIP” (Work in Progress) in the subject line. You can always add more commits later.
-
 <!--EndFragment-->
-
-7. <!--StartFragment-->If the project is on **GitHub**, here’s how to submit a pull request:<!--EndFragment-->
 
 <!--StartFragment-->
 
