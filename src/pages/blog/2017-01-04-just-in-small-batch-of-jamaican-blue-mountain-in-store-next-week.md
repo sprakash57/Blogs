@@ -1,18 +1,15 @@
 ---
-templateKey: "blog-post"
-author: "Codecell 303"
-title: "Just in: small batch of Jamaican Blue Mountain"
-date: 2017-01-04T15:04:10.000Z
+templateKey: blog-post
+author: Codecell 303
+title: Introduction to Open-source
+date: 2020-08-23T17:53:48.512Z
+description: A fun and comprehensive introduction to the world of Open-source
 featuredpost: true
-featuredimage: /img/chemex.jpg
-description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+featuredimage: /img/o_source.jpeg
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - open-source
+  - Linux
+  - GSoC
 ---
 
 ![chemex](/img/chemex.jpg)
