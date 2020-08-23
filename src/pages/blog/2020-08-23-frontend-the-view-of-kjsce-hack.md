@@ -4,7 +4,7 @@ title: "Frontend: The view of KJSCE Hack"
 date: 2019-10-28T18:30:00.000Z
 description: Relive the experience of KJSCE Hack 2019 with all the insights of the event!
 featuredpost: true
-featuredimage: /img/featuredimg.jpeg
+featuredimage: /img/1ftxplaywhqsajkge2tg4nw.jpeg
 tags:
   - Hackathon
   - Event
@@ -16,15 +16,11 @@ tags:
 
 The day began with the entire team fresh and frolic to welcome all the participants to the big day. A few of our out of station participants had already arrived the day prior to the main event. We served breakfast for all the participants arriving early.
 
-
-
-![Image for post](https://miro.medium.com/max/1600/1*FTxplAYWhQsAJkGe2tg4nw.jpeg)
+![Image for post](/img/1ftxplaywhqsajkge2tg4nw.jpeg)
 
 The registration process began and all the participants were provided with the entire schedule, a goodie bag, and an identity card. To ensure no mishaps during the hackathon we got each and every participant to sign a code of conduct during registration itself.
 
 After the registrations got done, everyone assembled in the auditorium for the opening ceremony.
-
-
 
 ![Image for post](https://miro.medium.com/max/414/0*gGujXid_hQAVIkDw)
 
@@ -53,8 +49,6 @@ Devfolio believes in bringing out the best from the participants and that’s po
 All the prizes were announced and the sparkly eyes with hopes to win them were the most adorable to look at. A general announcement of the entire schedule and the rules and regulations was done and we concluded the inauguration ceremony. Every participant was pumped up and was looking forward to the 24 hour code sprint as they moved to the seminar halls and settled there.
 
 The ideation period began which was for about an hour where everyone discussed various ideas for their projects and later they picked up one and began their project as soon as their Hacking period began.
-
-
 
 ![Image for post](https://miro.medium.com/max/1093/0*6iEtQcrTDY2FrP-w)
 
@@ -88,13 +82,9 @@ The teams that passed the evaluation successfully and secured the top three posi
 2. **Django Milkshake — DJ Sanghavi, Mumbai**
 3. **Rahasya — MIT-ADT, Pune**
 
-
-
 ![Image for post](https://miro.medium.com/max/1600/1*Ldf5Y4zTmnBpa-TqpLq3qQ.jpeg)
 
 We congratulate all three winners for their exceptional performance. It was an exceptional event which wouldn’t be possible without certain people.
-
-
 
 ![Image for post](https://miro.medium.com/max/6615/1*GQSz5yALOobZ6gKZPQRJcg.jpeg)
 
