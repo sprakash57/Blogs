@@ -1,9 +1,9 @@
 ---
 templateKey: blog-post
-title: Introduction to Open-source-X
+title: Introduction to Open-source-(old)
 date: 2020-08-23T13:50:23.362Z
 description: A fun and comprehensive introduction to the world of Open-source
-featuredpost: true
+featuredpost: false
 featuredimage: /img/o_source.jpeg
 tags:
   - open-source
