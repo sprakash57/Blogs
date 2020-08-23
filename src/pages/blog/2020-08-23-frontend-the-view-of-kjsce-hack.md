@@ -7,9 +7,7 @@ featuredpost: true
 featuredimage: /img/1ftxplaywhqsajkge2tg4nw.jpeg
 tags:
   - Hackathon
-  - Event
   - Coding
-  - KJSCE
   - CodeCell
 ---
 <!--StartFragment-->
