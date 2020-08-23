@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Introduction to JavaScript.
 date: 2020-08-23T10:38:13.438Z
 description: "Giving life to a website: JavaScript"
-featuredpost: true
+featuredpost: false
 featuredimage: /img/js_light_blue.jpg
 tags:
   - JavaScript
