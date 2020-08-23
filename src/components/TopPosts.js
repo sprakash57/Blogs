@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 import { Link } from "gatsby";
-import { gsap } from "gsap";
+import { gsap, Power3 } from "gsap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../sass/sections.sass";
 import "../sass/cards.sass";
@@ -11,10 +11,19 @@ import { Container } from "reactstrap";
 const TopPosts = ({ data }) => {
   const [characterNum, setCNUM] = useState(200);
 
+  let blogCards = useRef(null);
+
   useEffect(() => {
     let theWindow = window !== undefined ? window : null;
     setCNUM(theWindow.innerWidth < 768 ? 80 : 50);
     theWindow.onresize = () => setCNUM(theWindow.innerWidth < 768 ? 80 : 50);
+
+    gsap.from(blogCards, 3, {
+      autoAlpha: "0",
+      delay: "1.5",
+      ease: Power3.easeOut,
+      y: 100,
+    });
   }, []);
 
   return (
@@ -25,7 +34,7 @@ const TopPosts = ({ data }) => {
         {data.edges
           .filter((e) => e.node.frontmatter.templateKey === "blog-post")
           .map((e) => (
-            <div className="scroll-card">
+            <div className="scroll-card" ref={(el) => (blogCards = el)}>
               <Link to={e.node.fields.slug} className="scroll-card-img-holder">
                 <div className="scroll-card-img">
                   <img
