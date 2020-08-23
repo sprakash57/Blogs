@@ -7,7 +7,9 @@ description: |
 featuredpost: false
 featuredimage: /img/1_lxyneculxaognfrl1kv2_a.gif
 tags:
-  - foo
+  - Hackathon
+  - Coding
+  - CodeCell
 ---
 <!--StartFragment-->
 
