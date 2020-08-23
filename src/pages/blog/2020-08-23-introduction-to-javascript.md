@@ -1,8 +1,8 @@
 ---
 templateKey: blog-post
-title: Introduction to JavaScript.
+title: Introduction to JavaScript
 date: 2020-08-23T10:38:13.438Z
-description: "Giving life to a website: JavaScript"
+description: Dive into the world of JavaScript.
 featuredpost: false
 featuredimage: /img/js_light_blue.jpg
 tags:
