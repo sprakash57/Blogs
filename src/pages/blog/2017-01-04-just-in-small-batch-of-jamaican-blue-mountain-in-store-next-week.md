@@ -1,8 +1,8 @@
 ---
 templateKey: blog-post
 author: Codecell 303
-title: Introduction to Open-source
-date: 2020-08-23T17:53:48.512Z
+title: Introduction to Open-source2
+date: 2020-08-23T17:57:58.527Z
 description: A fun and comprehensive introduction to the world of Open-source
 featuredpost: true
 featuredimage: /img/o_source.jpeg
