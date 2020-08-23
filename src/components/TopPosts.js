@@ -26,6 +26,8 @@ const TopPosts = ({ data }) => {
     });
   }, []);
 
+  const max = 3;
+
   return (
     <Container>
       <div className="header">Top Posts</div>
@@ -59,14 +61,20 @@ const TopPosts = ({ data }) => {
 
                 {/* Badges for tags */}
                 <div class="tags">
-                  {e.node.frontmatter.tags.map((tag) => (
-                    <span
-                      className="badge badge-pill badge-success mr-2"
-                      style={{ fontSize: "1em" }}
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                  {e.node.frontmatter.tags.map((tag, index) => {
+                    if (index < max) {
+                      return (
+                        <span
+                          className="badge badge-pill badge-success mr-2"
+                          style={{ fontSize: "1em" }}
+                        >
+                          {tag}
+                        </span>
+                      );
+                    } else {
+                      return <span></span>;
+                    }
+                  })}
                 </div>
 
                 {/* Description */}
