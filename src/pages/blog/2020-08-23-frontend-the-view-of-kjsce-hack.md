@@ -9,6 +9,8 @@ tags:
   - Hackathon
   - Event
   - Coding
+  - KJSCE
+  - CodeCell
 ---
 <!--StartFragment-->
 
