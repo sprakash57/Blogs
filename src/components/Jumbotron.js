@@ -84,7 +84,7 @@ const Jumbotron = () => {
                 KJSCE
               </span>
               <span style={{ fontSize: "3em", textShadow: "4px 3px #777" }}>
-                Codecell
+                CodeCell
               </span>
             </h1>
             <h3
@@ -106,7 +106,7 @@ const Jumbotron = () => {
                   align="center"
                   style={{ textShadow: "3px 3px #777", fontSize: "2.8rem" }}
                 >
-                  KJSCE Codecell
+                  KJSCE CodeCell
                 </h1>
                 <h4 align="center" className="pt-2">
                   Changing the World

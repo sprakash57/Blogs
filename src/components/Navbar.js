@@ -35,7 +35,7 @@ const Menu = (props) => {
         <NavbarBrand href="/" style={{ fontWeight: "bold", color: "#eee" }}>
           <div ref={(el) => (brandName = el)}>
             <img src="/img/logowhite.png" alt="" style={{ width: "30px" }} />{" "}
-            KJSCE Codecell
+            KJSCE CodeCell
           </div>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} style={{ background: "#666" }} />

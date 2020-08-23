@@ -4,24 +4,8 @@ path: /about
 title: About our Blogs
 ---
 
-### Hello there!
+![KJSCE CodeCell logo](/img/logoCodecell.jpg)
 
-### Shade-grown coffee
+# Hello there!
 
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
-
-### Single origin
-
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
-
-### Sustainable farming
-
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
-
-### Direct sourcing
-
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
-
-### Reinvest profits
-
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+We at KJSCE CodeCell are constantly working to spread knowledge and help people get started into programming - going through dozens of tutorials, pages and pages of documentation - all so that you don't have to. We have started a new initiative - presenting to you the official blog site for KJSCE CodeCell - a place where you can read about our workshops, find tutorials to get started with a range of technologies, and most important of all - a place where the experience of dozens of people over the years has been compressed and penned down for others to read.
