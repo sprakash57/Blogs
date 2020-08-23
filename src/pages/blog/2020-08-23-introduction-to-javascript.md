@@ -20,7 +20,7 @@ JavaScript can change HTML contents, attribute values, styles(CSS), display stat
 
 You can place any number of scripts in an HTML document. Scripts can be placed in the <body>, or in the <head> section of an HTML page, or in both.
 
-Example: 
+**Example 1:** 
 
 ```html
 html>
@@ -39,6 +39,8 @@ html>
 </html>
 ```
 
+**Example 2:**
+
 ```html
 <html>
     <body>
@@ -54,6 +56,8 @@ html>
     </body>
 </html>
 ```
+
+**Example 3:**
 
 Also, we can have an external JavaScript file with extension “.js”.
 
@@ -77,13 +81,10 @@ These terms specify where the application is running. Client side refers to the 
 
 Most of the internet is based on this Client-server model
 
-
-
 * #### Various frameworks
 
 A JavaScript framework is an application framework written in JavaScript.
 Here are some famous JS frameworks:
-
 
 **1.** **Angular**: 
 
@@ -103,26 +104,14 @@ Vue.js is a library for building interactive web interfaces. The goal of Vue.js 
 
 Vue.js itself is not a full-blown framework - it is focused on the view layer only. It is therefore very easy to pick up and to integrate with other libraries or existing projects. On the other hand, when used in combination with proper tooling and supporting libraries, Vue.js is also perfectly capable of powering sophisticated Single-Page Applications.
 
-
-
 **4.** **Ember.js**
-
-
 
 **5.** **Meteor**
 
-
-
 **6. Mithril**
-
-
 
 **7. Polymer**
 
-
-
 **8. Aurelia**
-
-
 
 **9. Backbone.js**
