@@ -51,7 +51,7 @@ We opened our registration for the hackathon on 4th September 2019. We had a who
 
 <br/>
 
-![Image for post](https://miro.medium.com/max/1555/1*CXuWnCxjA0AG5NkT6ExpPg.jpeg)
+![](https://miro.medium.com/max/1555/1*CXuWnCxjA0AG5NkT6ExpPg.jpeg)
 
 <br/>
 
@@ -59,14 +59,14 @@ We were good to go with the two main aspects of any Hackathon, participation, an
 
 We had some special prizes as well for the best all-girls team, the team with the best UI and a Matic API prize for the best blockchain product. The best all-girls team received a cash prize of Rs.5,000 and an internship opportunity at Sheroes. The best UI received Sketch Licenses and the best blockchain product developed on Ethereum received a Matic API prize worth Rs.25,000. Also, one of our sponsors Tvarit GmbH selected a few teams giving them an internship opportunity.
 
-![Image for post](https://miro.medium.com/max/1345/1*nCCD59hAOuHIZt5bXPECBQ.jpeg)
+![](https://miro.medium.com/max/1345/1*nCCD59hAOuHIZt5bXPECBQ.jpeg)
 
 Finally, it dawned on us that the prizes alone wouldn’t make this a Hackathon, the one to be remembered by every participant and thought of some ways to make this an experience that would be enjoyed and commemorated by each and everyone attending it. We prepared goodie bags for each participant that included a notepad, pen, stickers from our patrons and a small snack in the form of GoodDay biscuits and Frooti. The night before the Hackathon, the entire team was up all night lined up like a human assembly line preparing goodie bags and getting ready for the main day of Action.
 
-![Image for post](https://miro.medium.com/max/750/1*HFvw0qlDrkaXOHY_Gbh1DQ.gif)
+![](https://miro.medium.com/max/750/1*HFvw0qlDrkaXOHY_Gbh1DQ.gif)
 
 <br/>
 
-![Image for post](https://miro.medium.com/max/1356/1*R0_7EwssK5lZc60pgXjFFg.jpeg)
+![](https://miro.medium.com/max/1356/1*R0_7EwssK5lZc60pgXjFFg.jpeg)
 
 <!--EndFragment-->
