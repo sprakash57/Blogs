@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import { Col, Row } from "reactstrap";
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
@@ -12,14 +13,27 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <div className="section">
+            <div className="section pt-2">
               <h1
                 className="title is-size-3 has-text-weight-bold is-bold-light"
                 style={{ fontSize: "2.5em", textAlign: "center" }}
               >
-                {title}
+                <u>{title}</u>
               </h1>
-              <PageContent className="content" content={content} />
+              <div className="pt-3">
+                <Row>
+                  <Col sm="12" md="4">
+                    <div style={{ margin: "auto", width: "60%" }}>
+                      <img src="img/logoCodecell.jpg" alt="logo" />
+                    </div>
+                  </Col>
+                  <Col sm="12" md="8">
+                    <div className="alignmentAbout">
+                      <PageContent className="content" content={content} />
+                    </div>
+                  </Col>
+                </Row>
+              </div>
             </div>
           </div>
         </div>

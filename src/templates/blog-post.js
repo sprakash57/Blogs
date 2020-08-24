@@ -17,6 +17,8 @@ export const BlogPostTemplate = ({
   tags,
   title,
   helmet,
+  author,
+  date,
 }) => {
   const PostContent = contentComponent || Content;
 
@@ -51,6 +53,9 @@ export const BlogPostTemplate = ({
               >
                 {title}
               </h1>
+              {date && <p>{date}</p>}
+              {author && <p>{author}</p>}
+
               <p className="blog-description">{description}</p>
               {tags && tags.length ? (
                 <div>
@@ -146,6 +151,7 @@ export const pageQuery = graphql`
         title
         description
         tags
+        author
       }
     }
   }
