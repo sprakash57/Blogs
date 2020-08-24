@@ -10,9 +10,7 @@ tags:
   - python
   - automation
 ---
-
-
-![Automation workshop banner.](/img/pythonatuomationbanner.png "Automation workshop banner.")
+![Automation workshop banner.](/img/pythonatuomationbanner.png)
 
 <!--StartFragment-->
 
@@ -51,15 +49,10 @@ We first introduced the entire workflow of what we were going to do that day and
 The workshop flow consisted of the following topics:
 
 1. Web scraping using beautiful soup
-
 2. Interacting with files and folders (CSV format)
-
 3. Templating
-
 4. Working with images and PDF (PIL)
-
 5. Emailing using SMTPLIB
-
 6. Cronjobs
 
 The participants were initially acquainted with Ubuntu and working with the terminal etc. they were made to install the python packages like pip(python package installer). For scraping, python’s BeautifulSoup and requests libraries were introduced. Different concepts of HTML like divisions classes, id and different types of requests like GET and POST were briefly explained. The hierarchical structure created using the soup object was explained. Thus after a proper understanding of the task, we commenced by scraping a [website](http://scrape.kjscecodecell.com/) made by us with details(name, dob, email, phone no., city, payment) of a few people that was updated at regular intervals using cronjob. Hence, the first module was finished.
