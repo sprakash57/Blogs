@@ -20,6 +20,8 @@ export default function Cards({ data }) {
   let tl = new TimelineLite();
   let t2 = new TimelineLite();
 
+  const max = 3;
+
   useEffect(() => {
     tl.from(textContentHeader, 2, {
       autoAlpha: "0",
@@ -68,10 +70,27 @@ export default function Cards({ data }) {
                     Featured
                   </span>
                 </div>
-                <h1 ref={(el) => (textContentHeader = el)}>
+                <h1 ref={(el) => (textContentHeader = el)} className="mt-1">
                   <a href={e.node.fields.slug}>{e.node.frontmatter.title}</a>
                 </h1>
                 <div ref={(el) => (textContentDesc = el)} className="trigger">
+                  {/* Badges for tags */}
+                  <div className="tags mb-2">
+                    {e.node.frontmatter.tags.map((tag, index) => {
+                      if (index < max) {
+                        return (
+                          <span
+                            className="badge badge-pill badge-success mr-2"
+                            style={{ fontSize: "0.8em" }}
+                          >
+                            {tag}
+                          </span>
+                        );
+                      } else {
+                        return <span></span>;
+                      }
+                    })}
+                  </div>
                   <p>{e.node.frontmatter.description}</p>
                   <p>{e.node.frontmatter.author}</p>
                 </div>

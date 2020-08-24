@@ -52,9 +52,31 @@ export const BlogPostTemplate = ({
                 }}
               >
                 {title}
+                {date && (
+                  <span
+                    style={{
+                      fontSize: "0.5em",
+                      fontWeight: "normal",
+                      color: "#24242433",
+                    }}
+                    className="ml-2"
+                  >
+                    {date}
+                  </span>
+                )}
               </h1>
-              {date && <p>{date}</p>}
-              {author && <p>{author}</p>}
+              {author && (
+                <div
+                  style={{
+                    fontSize: "1.8em",
+                    fontWeight: "bold",
+                    color: "#00bf8f",
+                  }}
+                  className="mr-3"
+                >
+                  {author}
+                </div>
+              )}
 
               <p className="blog-description">{description}</p>
               {tags && tags.length ? (
@@ -106,6 +128,8 @@ BlogPostTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
+  author: PropTypes.string,
+  date: PropTypes.string,
 };
 
 const BlogPost = ({ data }) => {
@@ -128,6 +152,8 @@ const BlogPost = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        author={post.frontmatter.author}
+        date={post.frontmatter.date}
       />
     </Layout>
   );
