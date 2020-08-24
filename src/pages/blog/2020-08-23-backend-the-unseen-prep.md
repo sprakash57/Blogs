@@ -27,7 +27,7 @@ Next came the part where we had to make a great prospectus for our event that en
 
 <br/>
 
-![Image for post](https://miro.medium.com/max/735/1*lXynEcULxAOgnFRl1kv2_A.gif)
+![](https://miro.medium.com/max/735/1*lXynEcULxAOgnFRl1kv2_A.gif)
 
 <br/>
 
