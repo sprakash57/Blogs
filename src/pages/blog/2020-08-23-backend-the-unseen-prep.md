@@ -6,7 +6,7 @@ author: CodeCell
 description: |
   “Technology is best when it brings people together”
 featuredpost: false
-featuredimage: /img/js_light_blue.jpg
+featuredimage: /img/kjscecodecell_logo.png
 tags:
   - Hackathon
   - Coding
