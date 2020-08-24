@@ -5,7 +5,7 @@ date: 2019-10-28T18:30:00.000Z
 author: CodeCell
 description: Relive the experience of KJSCE Hack 2019 with all the insights of the event!
 featuredpost: false
-featuredimage: /img/kjsce-hack-f.jpeg
+featuredimage: /img/kj-hack.jpeg
 tags:
   - Hackathon
   - Coding
