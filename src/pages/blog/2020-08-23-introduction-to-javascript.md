@@ -5,7 +5,7 @@ date: 2020-08-23T10:38:13.438Z
 author: CodeCell - Manasi, Amogh
 description: Dive into the world of JavaScript.
 featuredpost: false
-featuredimage: /img/js.jpg
+featuredimage: /img/js_light-blue.png
 tags:
   - JavaScript
   - HTML
