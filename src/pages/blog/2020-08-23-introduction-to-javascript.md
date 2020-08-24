@@ -11,7 +11,7 @@ tags:
   - HTML
   - DOM
 ---
-![Thumbnail](/img/js.jpg "Js image")
+![](/img/js.jpg "Js image")
 
 * ### **What is Javascript? How to use it?**
 
