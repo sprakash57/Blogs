@@ -26,7 +26,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
                 <Row>
                   <Col sm="12" md="4">
                     <div style={{ margin: "auto", width: "60%" }}>
-                      <img src="img/logoCodecell.jpg" alt="logo" />
+                      <img src="/img/logoCodecell.jpg" alt="logo" />
                     </div>
                   </Col>
                   <Col sm="12" md="8">
