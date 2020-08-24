@@ -41,7 +41,7 @@ We rejoiced at each and every confirmation we received and we are immensely grat
 
 <br/>
 
-![Image for post](https://miro.medium.com/max/1600/1*lZAmdpG31MRSMA2LxU8AVQ.jpeg)
+![](https://miro.medium.com/max/1600/1*lZAmdpG31MRSMA2LxU8AVQ.jpeg)
 
 <br/>
 
