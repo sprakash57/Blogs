@@ -11,7 +11,7 @@ tags:
   - Linux
   - GSoC
 ---
-![open-source](/img/o2.jpeg)
+![](/img/o2.jpeg)
 
 <!--StartFragment-->
 
@@ -55,38 +55,21 @@ The ‘what if?’ question always arises in our mind before we start contributi
 ## How to contribute to Open-source
 
 1. First and foremost, you must choose a programming language of your choice. Once you are done with selecting a programming language, search for a project that is interesting to you.
-
-
-
 2. After you find a project you want to contribute to, get to know Git and GitHub. On GitHub, you can contribute to projects by submitting issues and contributing code. Submitting issues means sending messages about errors in applications and suggesting ways to fix them. Contributing code involves sending pull requests with your corrections and improvements.
-
-
-
 3. Next, find issues and bugs with the project you selected earlier. A lot of open source projects label their issues to conveniently track them. A lot of projects use labels like beginner, easy, starter, good first bug, low hanging fruit, bitesize, trivial, easy fix, and new contributor. You can further narrow down your search based on the programming language you’re comfortable with, by adding language: name to your search query.
-
-
-
 4. **Opening an issue**
 
 You should usually open an issue in the following situations:
-
-
 
 1. Report an error you can’t solve yourself
 2. Discuss a high-level topic or idea (for example, community, vision or policies)
 3. Propose a new feature or other project idea
 
-
-
 Tips for communicating on issues:
-
-
 
 * If you see an open issue that you want to tackle, comment on the issue to let people know you’re on it. That way, people are less likely to duplicate your work.
 * If an issue was opened a while ago, it’s possible that it’s being addressed somewhere else, or has already been resolved, so comment to ask for confirmation before starting work.
 * If you opened an issue, but figured out the answer later on your own, comment on the issue to let people know, then close the issue. Even documenting that outcome is a contribution to the project.
-
-
 
 5. **Opening a Pull Request**
 
@@ -95,12 +78,7 @@ Fork and clone the repo on your local machine and fix the bug. Once you push the
 * Submit trivial fixes (for example, a typo, a broken link or an obvious error)
 * Start work on a contribution that was already asked for, or that you’ve already discussed, in an issue
 
-
-
 6. A pull request doesn’t have to represent finished work. It’s usually better to open a pull request early on, so others can watch or give feedback on your progress. Just mark it as a “WIP” (Work in Progress) in the subject line. You can always add more commits later.
-
-
-
 7. If the project is on **GitHub**, here’s how to submit a pull request:
 
 * Fork the repository and clone it locally. Connect your local to the original “upstream” repository by adding it as a remote. Pull in changes from “upstream” often so that you stay up to date so that when you submit your pull request, merge conflicts will be less likely.
@@ -147,7 +125,5 @@ Contributions to open-source benefit both the tech community and the general pub
 The people in tech that contribute to open-source create software that can be used for free elsewhere. Also people other than the original creators can contribute to the project or create their own forks(versions) of it. Open-source also emphasises on innovation, security and high quality software. This is not always possible in tech corporations as their main goal is to increase profits. Open-source software is especially useful to startup companies as costs for software licensing are avoided. The exchange of knowledge,code and ideas between different people helps tackle large problems and create novel solutions which is of benefit to the tech community.
 
 As a consumer, you have the choice of using free software that would otherwise be expensive or restricted but is made free and distributable by the efforts of a few driven individuals.
-
-
 
 <!--EndFragment-->
