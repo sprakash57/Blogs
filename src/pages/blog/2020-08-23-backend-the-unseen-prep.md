@@ -2,6 +2,7 @@
 templateKey: blog-post
 title: "Backend: The unseen Prep"
 date: 2020-08-23T19:36:33.244Z
+author: CodeCell
 description: |
   “Technology is best when it brings people together”
 featuredpost: false
