@@ -5,12 +5,12 @@ tagslist:
     name: Automation
     icon: https://pi.tedcdn.com/r/pf.tedcdn.com/images/playlists/what-happens-when-the-robots-take-our-jobs_4196162754.jpg?quality=89&w=256
   - tag: AI
-    image: https://bostonglobe-prod.cdn.arcpublishing.com/resizer/FP1GJPmPpu61YAv553ZgMRpHvNk=/1440x0/arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/HCIJCIQ2UAI6VKP2L3WHYVGSUE.jpg
+    image: https://play.vidyard.com/dfue68r4mbFDZaahetDu1x.jpg
     icon: https://www.locustec.com/wp-content/uploads/2020/05/locus_graphic_ai_cover-256x256.jpg
     name: Hackathon
   - tag: Cyber Security
-    image: https://i0.wp.com/www.ictworks.org/wp-content/uploads/2016/02/open-source-software.png?w=640&ssl=1
-    icon: https://i0.wp.com/www.ictworks.org/wp-content/uploads/2016/02/open-source-software.png?w=640&ssl=1
+    image: https://zdnet2.cbsistatic.com/hub/i/r/2020/02/25/786e6767-acb2-48fe-b749-2e3877355c44/thumbnail/570x322/f9f6c29c884bd7c4fa154288b3775359/github-we-wont-take-down-any-of-your-con-5e53c73eaf62370001d22921-1-feb-25-2020-16-31-14-poster.jpg
+    icon: https://alternative.me/media/256/github-icon-zlmrpmxcd2bvzsxv-c.png
     name: Open Source
   - image: https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png
     tag: Web Dev
