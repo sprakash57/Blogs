@@ -19,6 +19,7 @@ class BlogRoll extends React.Component {
                 margin: "2%",
                 backgroundColor: "white",
                 boxShadow: "0px 7px 15px #b1b1b1",
+                position: "relative",
               }}
               key={post.id}
             >
@@ -55,12 +56,21 @@ class BlogRoll extends React.Component {
                   </span>
                 </CardTitle>
               </div>
-              <p className="px-4 text-justify">
+              <p className="px-4 text-justify" style={{ marginBottom: "60px" }}>
                 {post.excerpt.charAt(0).toUpperCase() +
                   post.excerpt.substring(1, 150)}
                 ...
                 <br />
                 <br />
+              </p>
+              <p
+                className="px-4 pb-2"
+                style={{
+                  position: "absolute",
+                  bottom: "0px",
+                  marginTop: "40px",
+                }}
+              >
                 <Link
                   className="btn btn-primary text-white"
                   to={post.fields.slug}
