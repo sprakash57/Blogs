@@ -1,12 +1,12 @@
 ---
 templateKey: blog-post
 title: "Backend: The unseen Prep"
-date: 2020-08-23T19:36:33.244Z
+date: 2019-10-29T17:36:00.000Z
 author: CodeCell
 description: |
   “Technology is best when it brings people together”
 featuredpost: false
-featuredimage: /img/logoCodecell.jpg
+featuredimage: /img/js_light_blue.jpg
 tags:
   - Hackathon
   - Coding
