@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql, StaticQuery } from "gatsby";
-import PreviewCompatibleImage from "./PreviewCompatibleImage";
+// import PreviewCompatibleImage from "./PreviewCompatibleImage";
 import { CardTitle } from "reactstrap";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -25,11 +25,22 @@ class BlogRoll extends React.Component {
             >
               <div>
                 {post.frontmatter.featuredimage ? (
-                  <div style={{border: "none"}}>
-                    <PreviewCompatibleImage
+                  <div style={{ border: "none" }}>
+                    {/* <PreviewCompatibleImage
                       imageInfo={{
                         image: post.frontmatter.featuredimage,
                         alt: `Featured thumbnail for post ${post.frontmatter.title}`,
+                      }}
+                    /> */}
+                    <img
+                      src={
+                        post.frontmatter.featuredimage != null
+                          ? "/img/" +
+                            post.frontmatter.featuredimage.relativePath
+                          : "https://increasify.com.au/wp-content/uploads/2016/08/default-image.png"
+                      }
+                      style={{
+                        width: "100%"
                       }}
                     />
                   </div>
@@ -45,7 +56,9 @@ class BlogRoll extends React.Component {
                       {post.frontmatter.title}
                     </span>
                   </Link>
-                  <span className="d-block mt-1 text-muted">{post.frontmatter.date}</span>
+                  <span className="d-block mt-1 text-muted">
+                    {post.frontmatter.date}
+                  </span>
                 </CardTitle>
               </div>
               <p className="px-4 text-justify">
@@ -97,11 +110,7 @@ export default () => (
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
                 featuredimage {
-                  childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
+                  relativePath
                 }
               }
             }
