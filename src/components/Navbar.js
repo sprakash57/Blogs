@@ -31,7 +31,7 @@ const Menu = (props) => {
   });
   return (
     <Navbar light expand="md" className="background-blue sticky-top">
-      <div className="container pr-3">
+      <div className="container">
         <NavbarBrand href="/" style={{ fontWeight: "bold", color: "#eee" }}>
           <div ref={(el) => (brandName = el)}>
             <img src="/img/logowhite.png" alt="" style={{ width: "30px" }} />{" "}

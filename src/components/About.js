@@ -8,6 +8,7 @@ import {
   Grid1x2Fill,
   BugFill,
   SuitHeartFill,
+  CloudUpload,
 } from "react-bootstrap-icons";
 import { Row, Col } from "reactstrap";
 
@@ -43,6 +44,9 @@ const About = () => {
                 </Link>
                 <Link to="/categories">
                   <BugFill /> Explore categories
+                </Link>
+                <Link to="/about">
+                  <CloudUpload /> Submit Blog
                 </Link>
               </div>
             </Col>
