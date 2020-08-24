@@ -4,7 +4,7 @@ title: "Frontend: The view of KJSCE Hack"
 date: 2019-10-28T18:30:00.000Z
 description: Relive the experience of KJSCE Hack 2019 with all the insights of the event!
 featuredpost: false
-featuredimage: /img/1ftxplaywhqsajkge2tg4nw.jpeg
+featuredimage: /img/kjh-front.jpeg
 tags:
   - Hackathon
   - Coding
