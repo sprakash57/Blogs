@@ -15,7 +15,7 @@ tags:
 
 The day began with the entire team fresh and frolic to welcome all the participants to the big day. A few of our out of station participants had already arrived the day prior to the main event. We served breakfast for all the participants arriving early.
 
-![Image for post](/img/1ftxplaywhqsajkge2tg4nw.jpeg)
+![](/img/1ftxplaywhqsajkge2tg4nw.jpeg)
 
 The registration process began and all the participants were provided with the entire schedule, a goodie bag, and an identity card. To ensure no mishaps during the hackathon we got each and every participant to sign a code of conduct during registration itself.
 
