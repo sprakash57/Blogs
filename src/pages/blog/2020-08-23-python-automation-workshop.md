@@ -10,7 +10,7 @@ tags:
   - python
   - automation
 ---
-![Automation workshop banner.](/img/pythonatuomationbanner.png)
+![](/img/pythonatuomationbanner.png)
 
 <!--StartFragment-->
 
