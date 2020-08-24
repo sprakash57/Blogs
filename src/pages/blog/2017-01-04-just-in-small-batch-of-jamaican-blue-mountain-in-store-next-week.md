@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Introduction to Open-source
 date: 2020-08-23T18:07:32.991Z
-author: Jayesh, Vidhi, Bhuvnesh
+author: CodeCell - Jayesh, Vidhi, Bhuvnesh
 description: A fun and comprehensive introduction to the world of Open-source
 featuredpost: true
 featuredimage: /img/o_source.jpeg
