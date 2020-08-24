@@ -35,7 +35,24 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
                     </div>
                   </Col>
                 </Row>
-                <Row>
+                <Row className=" mt-3">
+                  <Col sm="12" md="8">
+                    <p className="alignmentAbout">
+                      <p>
+                        Interested in tech? Have a knack for writing? Want your
+                        voice to be heard? We'd like to to see what you have in
+                        store for us.
+                      </p>{" "}
+                      <p>
+                        {" "}
+                        Submit your articles here to blogs.kjscecodecell.com and
+                        stand a chance for your blog to be featured on our
+                        website! Every month CodeCell will be selecting the best
+                        submissions and publishing them on this website. Hit the
+                        "Submit" button to get started.
+                      </p>
+                    </p>
+                  </Col>
                   <Col sm="4">
                     <a
                       href="https://forms.gle/2U6zvUJQ4gthuGGu5"

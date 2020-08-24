@@ -12,11 +12,12 @@ tags:
   - Coding
   - CodeCell
 ---
+
 <!--StartFragment-->
 
 <br/>
 
-![Image for post](https://miro.medium.com/max/3868/1*ymK8itoMF_FGYdF5EuWY6g.jpeg)
+![](https://miro.medium.com/max/3868/1*ymK8itoMF_FGYdF5EuWY6g.jpeg)
 <br/>
 
 **CodeCell** believes in bringing people together to develop great products in a 24Hrs coding marathon. To make the 4th edition of KJSCE Hack a great success the team started it’s preparations four months prior to the huge day.
