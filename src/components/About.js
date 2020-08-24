@@ -7,6 +7,7 @@ import {
   CodeSlash,
   Grid1x2Fill,
   BugFill,
+  SuitHeartFill,
 } from "react-bootstrap-icons";
 import { Row, Col } from "reactstrap";
 
@@ -19,17 +20,13 @@ const About = () => {
             <Col sm md="6">
               <div className="aboutHeader">About</div>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Blanditiis, quas sunt iusto velit, enim veritatis numquam
-                fugiat, atque delectus architecto amet sit officiis saepe
-                reprehenderit distinctio optio. Et repellat voluptatem maxime!
-                Consequatur repudiandae quas, a illo eius nemo eligendi
-                explicabo?
+                We at KJSCE COdeCell have created this one stop destination for
+                all the technical know-how you would require to set sail in the
+                fascinating world of coding.
               </p>
               <p className="d-none d-md-block">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
-                sint voluptatum, inventore possimus ad at similique tempore unde
-                asperiores laborum, cum architecto quae eum rerum?
+                We hope you are ready to apply a real life sort by relevance
+                filter to all the information avaiolable on the internet
               </p>
             </Col>
             <Col sm md="6">
@@ -50,7 +47,9 @@ const About = () => {
               </div>
             </Col>
           </Row>
-          <span className="pt-3">Created by KJSCE Codecell</span>
+          <span className="pt-3">
+            Created by <SuitHeartFill /> KJSCE Codecell
+          </span>
         </div>
       </div>
     </div>
