@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql, StaticQuery } from "gatsby";
-// import PreviewCompatibleImage from "./PreviewCompatibleImage";
 import { CardTitle } from "reactstrap";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -26,12 +25,6 @@ class BlogRoll extends React.Component {
               <div>
                 {post.frontmatter.featuredimage ? (
                   <div style={{ border: "none" }}>
-                    {/* <PreviewCompatibleImage
-                      imageInfo={{
-                        image: post.frontmatter.featuredimage,
-                        alt: `Featured thumbnail for post ${post.frontmatter.title}`,
-                      }}
-                    /> */}
                     <img
                       src={
                         post.frontmatter.featuredimage != null
