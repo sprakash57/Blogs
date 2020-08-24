@@ -4,6 +4,8 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import { Col, Row } from "reactstrap";
+import { Download } from "react-bootstrap-icons";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
@@ -31,6 +33,19 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
                     <div className="alignmentAbout">
                       <PageContent className="content" content={content} />
                     </div>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col sm="4">
+                    <a
+                      href="https://forms.gle/2U6zvUJQ4gthuGGu5"
+                      className="m-auto pb-4"
+                    >
+                      <div className="btn btn-lg btn-primary">
+                        {" "}
+                        Submit your blog Here <Download />{" "}
+                      </div>
+                    </a>
                   </Col>
                 </Row>
               </div>

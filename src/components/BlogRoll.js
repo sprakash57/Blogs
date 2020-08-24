@@ -39,8 +39,9 @@ class BlogRoll extends React.Component {
                             post.frontmatter.featuredimage.relativePath
                           : "https://increasify.com.au/wp-content/uploads/2016/08/default-image.png"
                       }
+                      alt={post.frontmatter.title}
                       style={{
-                        width: "100%"
+                        width: "100%",
                       }}
                     />
                   </div>
