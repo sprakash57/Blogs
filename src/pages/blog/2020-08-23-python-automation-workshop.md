@@ -2,6 +2,7 @@
 templateKey: blog-post
 title: Python Automation Workshop
 date: 2019-08-20T12:33:31.974Z
+author: CodeCell
 description: A workshop to commence an era of automated tasks
 featuredpost: false
 featuredimage: /img/pythonatuomationbanner.png
