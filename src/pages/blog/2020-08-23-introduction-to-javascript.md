@@ -19,7 +19,7 @@ JavaScript is the programming language of HTML and the web. It is easy to learn.
 
 JavaScript can change HTML contents, attribute values, styles(CSS), display status etc. It is free to use and it need not be downloaded as JavaScript is already running in your browser on your computer, on your tablet, and on your smart-phone.
 
-You can place any number of scripts in an HTML document. Scripts can be placed in the <body>, or in the <head> section of an HTML page, or in both.
+You can place any number of scripts in an HTML document. Scripts can be placed in the "body", or in the "head" section of an HTML page, or in both.
 
 **Example 1:** 
 
