@@ -52,7 +52,7 @@ const About = () => {
             </Col>
           </Row>
           <span className="pt-3">
-            Created by <SuitHeartFill /> KJSCE Codecell
+            Created with <SuitHeartFill /> by KJSCE Codecell
           </span>
         </div>
       </div>
