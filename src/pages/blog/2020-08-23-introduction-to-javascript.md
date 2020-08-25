@@ -7,7 +7,7 @@ description: Dive into the world of JavaScript.
 featuredpost: false
 featuredimage: /img/js_light-blue.png
 tags:
-  - JavaScript
+  - Javascript
   - HTML
   - DOM
 ---
