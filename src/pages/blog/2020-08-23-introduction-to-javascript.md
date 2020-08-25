@@ -24,7 +24,7 @@ You can place any number of scripts in an HTML document. Scripts can be placed i
 **Example 1:** 
 
 ```html
-html>
+<html>
     <head>
         <script>
             function abc(){
