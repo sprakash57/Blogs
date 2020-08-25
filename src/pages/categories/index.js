@@ -14,7 +14,7 @@ const TagsPage = ({ data }) => {
     <Layout>
       <section className="section">
         <Helmet title={`Categories | ${data.site.siteMetadata.title}`} />
-        <Container className="content mt-5">
+        <div className="category-list-container mt-5">
           <h1>Categories</h1>
           <div className="category-list mt-4">
             {tagsdata.tagslist.map((tag) => (
@@ -25,11 +25,11 @@ const TagsPage = ({ data }) => {
                 }}
                 className="category-list-category"
               >
-                <h1>{tag.name}</h1>
+                <h1 className="category-heading">{tag.name}</h1>
               </Link>
             ))}
           </div>
-        </Container>
+        </div>
       </section>
     </Layout>
   );
