@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: "Frontend: The view of KJSCE Hack"
 date: 2019-10-28T18:30:00.000Z
-author: CodeCell
+author: Hetal
 description: Relive the experience of KJSCE Hack 2019 with all the insights of the event!
 featuredpost: false
 featuredimage: /img/kjsce-hack.jpeg
