@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: "Backend: The unseen Prep"
 date: 2019-10-29T17:36:00.000Z
-author: CodeCell
+author: CodeCell - Hetal
 description: |
   “Technology is best when it brings people together”
 featuredpost: false
